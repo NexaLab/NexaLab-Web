@@ -1,0 +1,16 @@
+To create new branch on github:
+
+git checkout -b branch-name
+
+
+To switch to another branch:
+
+git checkout branch-name
+
+To Commit Code:
+
+git add .
+
+git commit -m "Message"
+
+git push 
