@@ -1,6 +1,6 @@
 To create new branch on github:
 
-git checkout -b branch-name
+git checkout -b <branch-name>
 
 
 To switch to another branch:
