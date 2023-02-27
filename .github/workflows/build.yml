@@ -27,13 +27,13 @@ jobs:
           script: |
 
             cd /var/www/html
-            sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf nexalabApp
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf NexaLab-Web
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git
             cd NexaLab-Web
             npm install
             npm run build
-            sudo -S cp -r build/ /var/www/html/nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S cp -r build/ /var/www/html/nexalabApp
 
 
 
