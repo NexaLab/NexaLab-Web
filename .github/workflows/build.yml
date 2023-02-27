@@ -19,13 +19,21 @@ jobs:
         run: npm run build
 
       - name: Deploy to DigitalOcean
-        uses: appleboy/scp-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-          source: 'build/'
-          target: '/var/www/html'
+          script: |
+
+            cd /var/www/html
+            sudo rm -rf nexalabApp
+            git clone https://github.com/NexaLab/NexaLab-Web.git
+            cd NexaLab-Web
+            npm install
+            npm run build
+            sudo cp -r build/ /var/www/html/nexalabApp
+
 
 
       - name: Restart Nginx
@@ -35,6 +43,9 @@ jobs:
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           script: |
+            cd /etc/nginx/sites-enabled
+            sudo rm -rf nexalabApp
+            sudo ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S service nginx restart
 
 
