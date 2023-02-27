@@ -18,24 +18,31 @@ jobs:
       - name: Build application
         run: npm run build
 
-      - name: Deploy to DigitalOcean
-        uses: appleboy/ssh-action@main
-        with:
-          host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
-          username: ${{ secrets.DIGITALOCEAN_USERNAME }}
-          password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-          source: ./build/
-          target: /var/www/html/
+      # - name: Deploy to DigitalOcean
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
+      #     username: ${{ secrets.DIGITALOCEAN_USERNAME }}
+      #     password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
+      #     source: ./build/
+      #     target: /var/www/html/
 
 
       - name: Restart Nginx
-        uses: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           script: |
-
+            cd /var/www/html/
+            sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+            sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+            git clone https://github.com/NexaLab/NexaLab-Web.git
+            cd NexaLab-Web
+            npm install
+            npm run build
+            sudo cp -r build/ /var/www/html/nexalabApp
             cd /etc/nginx/sites-enabled
             sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
             sudo -S ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/ <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
