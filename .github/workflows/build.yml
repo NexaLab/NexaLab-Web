@@ -6,21 +6,29 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  build:
-    runs-on: self-hosted
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-        
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with: 
-          node-version: ${{ matrix.node-version }}
-    - run: |
-        npm i
-        npm run build
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build application
+        run: npm run build
+
+      - name: Deploy to DigitalOcean
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
+          username: ${{ secrets.DIGITALOCEAN_USERNAME }}
+          password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
+          source: 'build/'
+          target: '/var/www/html'
+
+      - name: Restart Nginx
+        run: ssh ${{ secrets.DIGITALOCEAN_USERNAME }}@${{ secrets.DIGITALOCEAN_IP_ADDRESS }} "sudo service nginx restart"
 
   sonarcloud:
     name: SonarCloud
