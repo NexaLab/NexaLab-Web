@@ -35,7 +35,8 @@ jobs:
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           script: |
-            sudo service nginx restart
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S service nginx restart
+
 
   sonarcloud:
     name: SonarCloud
