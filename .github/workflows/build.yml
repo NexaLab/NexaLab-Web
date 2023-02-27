@@ -24,17 +24,8 @@ jobs:
           host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-          script: |
-
-            cd /var/www/html
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf nexalabApp
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf NexaLab-Web
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git
-            cd NexaLab-Web
-            npm install
-            npm run build
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S cp -r build/ /var/www/html/nexalabApp
-
+          source: 'build/'
+          target: '/var/www/html/nexalabApp'
 
 
       - name: Restart Nginx
