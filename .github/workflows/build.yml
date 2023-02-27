@@ -28,7 +28,7 @@ jobs:
           target: '/var/www/html'
 
       - name: Restart Nginx
-        run: ssh ssh -i /path/to/private/key ${{ secrets.DIGITALOCEAN_USERNAME }}@${{ secrets.DIGITALOCEAN_IP_ADDRESS }} "sudo service nginx restart"
+        run: ssh ssh -i /path/to/private/key ${{ secrets.DIGITALOCEAN_USERNAME }}@143.244.156.234 "sudo service nginx restart"
 
   sonarcloud:
     name: SonarCloud
