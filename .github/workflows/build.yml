@@ -24,8 +24,8 @@ jobs:
           host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
           username: ${{ secrets.DIGITALOCEAN_USERNAME }}
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-          source: 'build/'
-          target: '/var/www/html/nexalabApp'
+          source: ./build/
+          target: /var/www/html/nexalabApp
 
 
       - name: Restart Nginx
