@@ -26,6 +26,9 @@ jobs:
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           source: 'build/'
           target: '/var/www/html'
+      - name: Add host key to known_hosts file
+        run: ssh-keyscan -H ${{ secrets.DIGITALOCEAN_IP_ADDRESS }} >> ~/.ssh/known_hosts
+
 
       - name: Restart Nginx
         run: ssh ${{ secrets.DIGITALOCEAN_USERNAME }}@143.244.156.234 "sudo service nginx restart"
