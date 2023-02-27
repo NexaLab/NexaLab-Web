@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           script: |
 
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S su -
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S su 
             cd /var/www/html/
             sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
             sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
