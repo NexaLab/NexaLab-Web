@@ -27,12 +27,12 @@ jobs:
           script: |
 
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | cd /var/www/html
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo rm -rf nexalabApp
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo git clone https://github.com/NexaLab/NexaLab-Web.git
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf nexalabApp
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | cd NexaLab-Web
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | npm install
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | npm run build
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo cp -r build/ /var/www/html/nexalabApp
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S cp -r build/ /var/www/html/nexalabApp
 
 
 
@@ -44,8 +44,8 @@ jobs:
           password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
           script: |
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | cd /etc/nginx/sites-enabled
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo rm -rf nexalabApp
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S rm -rf nexalabApp
+            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/
             echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S service nginx restart
 
 
