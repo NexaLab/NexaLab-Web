@@ -42,8 +42,6 @@ jobs:
             sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
             git clone https://github.com/NexaLab/NexaLab-Web.git
             cd NexaLab-Web
-            npm install
-            npm run build
             sudo cp -r build/ /var/www/html/nexalabApp
             cd /etc/nginx/sites-enabled
             sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
