@@ -4,6 +4,9 @@ import "./SideBar.css"
 import NexaLabLogo from "../../assets/NexaLabNLogo.jpeg"
 import { useState } from 'react'
 import BackButtonOfSideBar from "../../assets/BackButtonSideBar.png"
+import SideBarIcon from "../../assets/SideBarIcon.png"
+
+
 
 function SideBar() {
 
@@ -33,8 +36,7 @@ function SideBar() {
 
                         style=
                         {{
-                            alignSelf:"flex-start",
-                            cursor:"pointer"
+                            cursor:"pointer",
                         }}
 
                         onClick= {closeSideBar}
@@ -43,13 +45,8 @@ function SideBar() {
                         <img
                             src={NexaLabLogo}
                             alt=""
-
-                            style=
-                            {{
-                                width: 58,
-                                height: 58,
-        
-                            }}
+                            id='side-bar-nexlab-logo'
+                            
 
                         />
 
@@ -82,17 +79,7 @@ function SideBar() {
                                         {
                                             label: "Custom Software Development",
                                             key: "Custom Software Developement",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                marginTop: "5px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -101,17 +88,7 @@ function SideBar() {
                                         {
                                             label: "Web Development",
                                             key: "Web Developement",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -120,17 +97,7 @@ function SideBar() {
                                         {
                                             label: "Mobile Development",
                                             key: "Mobile Developement",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -139,17 +106,7 @@ function SideBar() {
                                         {
                                             label: "Web Design",
                                             key: "Web Design",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -158,17 +115,7 @@ function SideBar() {
                                         {
                                             label: "Social Media Marketing",
                                             key: "Social Media Marketing",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -177,17 +124,7 @@ function SideBar() {
                                         {
                                             label: "SEO",
                                             key: "SEO",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -196,17 +133,7 @@ function SideBar() {
                                         {
                                             label: "Content",
                                             key: "Content",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -214,17 +141,7 @@ function SideBar() {
                                         {
                                             label: "Software Quality Assurance (QA)",
                                             key: "Software Quality Assurance",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -232,17 +149,7 @@ function SideBar() {
                                         {
                                             label: "Graphics Designer",
                                             key: "Graphics Designer",
-                                            style:
-                                            {
-                                                borderBottom: "1px solid #61C2D0",
-                                                borderRadius: "0px",
-                                                fontFamily: "Product Sans, sans-serif",
-                                                fontWeight: 530,
-                                                fontSize: 15,
-                                                color: "#0D1625",
-                                                paddingLeft: "17px",
-
-                                            }
+                                            className: "services-links"
                                         },
 
 
@@ -264,7 +171,14 @@ function SideBar() {
                 ></Menu>
 
             </Drawer>
-            <Button onClick={showSideBarDrawer}>Open</Button>
+            <img src={SideBarIcon} alt="" onClick={showSideBarDrawer}
+            
+            style=
+            {{
+                marginRight:24,
+                cursor:"pointer"
+            }}
+            />
         </Layout>
     )
 }
