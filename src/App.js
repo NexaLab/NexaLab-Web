@@ -1,5 +1,4 @@
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
 import ConnectUs from './components/ConnectUs/ConnectUs';
 
 function App() {
