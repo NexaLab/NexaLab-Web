@@ -100,5 +100,20 @@
 
 
 
+/*                                            Media Queries                                     */
+
+
+
+@media (max-width:375px) {
+    
+    #nexalab-logo {
+        width: 155.25px !important;
+        height: 155.25px !important;
+    }
+}
+
+
+
+
 
 
