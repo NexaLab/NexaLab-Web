@@ -11,6 +11,7 @@
     justify-content: space-between !important;
     border-bottom: 1px solid #F2F3F5 !important;
     padding-left: 2em !important;
+     border-bottom: 1px solid #F2F3F5 !important;
 }
 
 
@@ -18,8 +19,8 @@
 
 
 #nexalab-logo {
-    width: 190px !important;
-    height: 190px !important;
+    width: 185.25px !important;
+    height: 185.25px !important;
     box-sizing: border-box !important;
 }
 
