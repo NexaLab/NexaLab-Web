@@ -6,50 +6,50 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+  #     - name: Install dependencies
+  #       run: npm install
 
-      - name: Build application
-        run: npm run build
+  #     - name: Build application
+  #       run: npm run build
 
-      # - name: Deploy to DigitalOcean
+  #     - name: Deploy to DigitalOcean
+  #       uses: appleboy/ssh-deploy@master
+  #       with:
+  #         host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
+  #         username: ${{ secrets.DIGITALOCEAN_USERNAME }}
+  #         password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
+  #         source: ./build/
+  #         target: /var/www/html/
+
+
+      # - name: Restart Nginx
       #   uses: appleboy/ssh-action@master
       #   with:
       #     host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
       #     username: ${{ secrets.DIGITALOCEAN_USERNAME }}
       #     password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-      #     source: ./build/
-      #     target: /var/www/html/
+      #     script: |
 
-
-      - name: Restart Nginx
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.DIGITALOCEAN_IP_ADDRESS }}
-          username: ${{ secrets.DIGITALOCEAN_USERNAME }}
-          password: ${{ secrets.DIGITALOCEAN_PASSWORD }}
-          script: |
-
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S su 
-            cd /home/nexalab
-            sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git
-            cd NexaLab-Web
-            ls # Check if 'build' folder exists
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S npm install
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S npm run build
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S cp -r build/ /var/www/html/nexalabApp
-            cd /etc/nginx/sites-enabled
-            sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            sudo -S ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/ <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
-            echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S service nginx restart
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S su 
+      #       cd /home/nexalab
+      #       sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+      #       sudo -S rm -rf NexaLab-Web <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S git clone https://github.com/NexaLab/NexaLab-Web.git
+      #       cd NexaLab-Web
+      #       ls # Check if 'build' folder exists
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S npm install
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S npm run build
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S cp -r build/ /var/www/html/nexalabApp
+      #       cd /etc/nginx/sites-enabled
+      #       sudo -S rm -rf nexalabApp <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+      #       sudo -S ln -s /etc/nginx/sites-available/nexalabApp /etc/nginx/sites-enabled/ <<< "${{ secrets.DIGITALOCEAN_PASSWORD }}"
+      #       echo "${{ secrets.DIGITALOCEAN_PASSWORD }}" | sudo -S service nginx restart
 
 
   sonarcloud:
