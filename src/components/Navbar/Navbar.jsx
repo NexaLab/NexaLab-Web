@@ -1,9 +1,12 @@
 import { Layout, Menu } from 'antd';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css";
 import  NexaLabLogo  from "../../assets/NexaLabLogo.svg";
+import SideBar from '../SideBar/SideBar';
 
 function Navbar() {
+
+    const [ deviceWidth, setDeviceWidth] = useState(window.innerWidth);
 
     const [ currentNavLink, setCurrentNavLink ] = useState('Home')
 
@@ -13,11 +16,27 @@ function Navbar() {
         setCurrentNavLink(event.key);
     }
 
+    const calculateDeviceWidth = () => {
+      setDeviceWidth(window.innerWidth);
+    }
 
+  useEffect( () => {
+
+    window.addEventListener('resize', calculateDeviceWidth);
+
+    return () => {
+      window.removeEventListener('resize', calculateDeviceWidth);
+    };
+
+  },[])
 
   return (
     <Layout id='navbar'>
        <img src={NexaLabLogo} alt=""  id='nexalab-logo'/>
+       { 
+       deviceWidth > 1067 ? 
+
+
        <Menu
         id='nav-links'
         items= 
@@ -33,6 +52,10 @@ function Navbar() {
         onClick = {onSelectNavLink}
         selectedKeys = { [ currentNavLink ] }
        ></Menu>
+
+
+       : <SideBar/>
+      }
     </Layout>
   )
 }

@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+
+
+
+#sidebar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: transparent !important;
+}
+
+
+
+
+
+
+
+#sidebar-links {
+    text-align: start !important;
+    border: none !important;
+    outline: none !important;
+    width: 100% !important;
+    margin-top: 30px !important;
+    
+}
+
+
+
+
+
+
+#sidebar-links li {
+    border-bottom: 1px solid #61C2D0 !important;
+    border-radius: 0px !important;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 530 !important;
+    font-size: 15px !important;
+    color: #0D1625 !important;
+   margin-bottom: 35px !important;
+   padding-left: 17px !important;
+
+}
+
+
+
+
+
+
+
+#sidebar-links li::after {
+background: none !important;
+}
+
+
+
+
+
+
+
+#drawer-div-container
+{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 104px !important;
+    width: 100% !important;
+
+}
+
+
+#drawer-logo-container{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-left: 16px !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+
+
+
+
+
+/*                                            Ant Design Modifying CSS                                     */
+
+
+
+
+
+.ant-drawer-body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+
+
+
+
+.ant-menu-submenu-title {
+padding-inline: 0px !important;
+}
+
+
+
+.ant-menu-submenu-popup{
+
+  top:200px !important;
+}
+
+
+
+
+
+
+
+.ant-drawer-content-wrapper {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+
+
+

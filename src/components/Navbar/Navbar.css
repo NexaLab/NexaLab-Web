@@ -1,4 +1,4 @@
-
+@import url('https://fonts.cdnfonts.com/css/product-sans');
 
 
 
@@ -18,8 +18,8 @@
 
 
 #nexalab-logo {
-    width: 150px !important;
-    height: 150px !important;
+    width: 190px !important;
+    height: 190px !important;
     box-sizing: border-box !important;
 }
 
@@ -32,8 +32,10 @@
     flex-direction: row !important;
     align-items: center !important;
     justify-content: center !important;
-    font-family: Averta, sans-serif !important;
+    font-family: 'Product Sans', sans-serif;
     font-weight: 530 !important;
+    font-size: 12.75px !important;
+    color: #0D1625 !important;
     width: 610px !important;
 }
 
@@ -71,7 +73,7 @@
     left: 0 !important;
     background: #61C2D0 !important;
 
-    animation: widthOfSelectItem 0.7s forwards;
+    animation: widthOfSelectItem 0.6s forwards;
 
 }
 
