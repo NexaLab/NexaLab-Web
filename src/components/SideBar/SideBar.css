@@ -237,6 +237,62 @@ padding-inline: 0px !important;
 
 
 
+
+
+@media screen and (max-width:1025px) and (min-width: 601px) {
+
+
+    #sidebar-links li {
+        font-size: 26px !important;
+        margin-bottom: 95px !important;
+    } 
+
+
+
+    #sidebar-links {
+        margin-top: 127px !important;
+    }
+
+
+
+
+
+    #side-bar-nexlab-logo{
+
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+
+
+
+    .services-links {
+        font-size: 26px !important;
+        margin-top: 20px !important;
+    }
+
+
+
+
+    #sidebar-links .ant-menu-title-content {
+        margin-left: 18px !important;
+    }
+    
+
+
+
+
+    .ant-menu-submenu-popup{
+        top: 270px !important;
+        left: 130px !important;
+    }
+
+}
+
+
+
+
+
 @media (max-width:290px) {
 
     .ant-menu-submenu-popup{
