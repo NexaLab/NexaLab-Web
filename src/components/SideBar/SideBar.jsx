@@ -33,7 +33,7 @@ function SideBar() {
 
                         <img src={BackButtonOfSideBar} alt=""
 
-
+                        id='back-button-of-sidebar'
                         style=
                         {{
                             cursor:"pointer",

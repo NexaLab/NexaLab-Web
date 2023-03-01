@@ -239,7 +239,7 @@ padding-inline: 0px !important;
 
 
 
-@media screen and (max-width:1025px) and (min-width: 601px) {
+@media screen and (max-width:1020px) and (min-width: 601px) {
 
 
     #sidebar-links li {
@@ -285,6 +285,15 @@ padding-inline: 0px !important;
     .ant-menu-submenu-popup{
         top: 270px !important;
         left: 130px !important;
+    }
+
+
+
+    #back-button-of-sidebar {
+
+        width: 43.5px !important;
+        height: 43.5px !important;
+
     }
 
 }
