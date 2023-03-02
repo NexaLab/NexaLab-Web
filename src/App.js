@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import Testimonials from './components/Test/Testimonials/Testimonials';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
   return (
