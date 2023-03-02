@@ -4,7 +4,6 @@ import "./SideBar.css"
 import NexaLabLogo from "../../assets/NexaLabNLogo.jpeg"
 import BackButtonOfSideBar from "../../assets/BackButtonSideBar.png"
 import SideBarIcon from "../../assets/SideBarIcon.png"
-import { useState } from 'react'
 
 
 
