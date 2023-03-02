@@ -74,7 +74,7 @@
 
         font-weight: 500 !important;
         font-size: 40px !important;
-        font-family: ProductSans !important;
+        font-family: ProductSans, sans-serif !important;
         margin-top: 0px !important;
         margin-bottom: 17px !important;
     }
@@ -198,7 +198,7 @@
     #our-team-member-name{
 
 
-        font-family: ProductSans !important;
+        font-family: ProductSans, sans-serif !important;
         margin-bottom: 1.5px !important;
         margin-top: 15px !important;
         font-size: 18px !important;
@@ -214,7 +214,7 @@
     #our-team-member-designation {
 
         color: #61dafb !important;
-        font-family:  ProductSansRegular;
+        font-family:  ProductSansRegular, sans-serif !important;
         font-size: 15px !important;
     }
 
@@ -225,7 +225,7 @@
 
     #our-team-member-details {
 
-        font-family:  ProductSansRegular !important;
+        font-family:  ProductSansRegular, sans-serif !important;
         text-align: center !important;
 
 
@@ -289,7 +289,7 @@
 #our-team-member-name{
 
 
-    font-family: ProductSans !important;
+    font-family: ProductSans, sans-serif !important;
     margin-bottom: 0px !important;
     font-size: 20px !important;
     
@@ -307,7 +307,7 @@
 #our-team-member-designation {
 
     color: #61dafb !important;
-    font-family:  ProductSansRegular;
+    font-family:  ProductSansRegular, sans-serif !important;
     font-size: 17px !important;
 }
 
