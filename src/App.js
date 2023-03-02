@@ -1,7 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import OurTeam from './components/Our Team/OurTeam';
-import Test from './components/Test/Test';
+
+
 
 function App() {
   return (

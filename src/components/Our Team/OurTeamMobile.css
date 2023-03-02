@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 
 
@@ -42,7 +42,6 @@
 
         width: 100% !important;
         height: fit-content !important;
-        border: 1px solid red !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
