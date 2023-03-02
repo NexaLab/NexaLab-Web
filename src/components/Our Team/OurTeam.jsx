@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./OurTeam.css";
 import "./OurTeamTablet.css";
 import "./OurTeamMobile.css";
@@ -9,8 +9,6 @@ import OurTeamRightBox from "../../assets/Our Team/OurTeamRightBoxWithBorderRadi
 import TeamMemberImage from "../../assets/Our Team/TeamMemberImage.png"
 import OurTeamLeftBorderBoxMobile from "../../assets/Our Team/OurTeamLeftBorderBoxMobile.png";
 import OurTeamRightBorderBoxMobile from "../../assets/Our Team/OurTeamRightBorderBoxMobile.png"
-import { useState, useEffect } from 'react';
-
 
 
 

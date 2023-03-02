@@ -257,16 +257,6 @@
 
 
 
-    #our-team-middle-content {
-
-        width: 90%;
-
-    }
-
-
-
-
-
 
     #our-team-middle-content {
     
@@ -277,6 +267,7 @@
         /* flex-wrap: wrap !important; */
         height: fit-content !important;
         width: 75% !important;
+        width: 90% !important;
     }
 
 
