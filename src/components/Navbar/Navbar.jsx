@@ -6,9 +6,14 @@ import SideBar from '../SideBar/SideBar';
 
 function Navbar() {
 
+
     const [ deviceWidth, setDeviceWidth] = useState(window.innerWidth);
 
     const [ currentNavLink, setCurrentNavLink ] = useState('Home')
+
+
+
+
 
 
     const onSelectNavLink = (event) => {
@@ -16,9 +21,17 @@ function Navbar() {
         setCurrentNavLink(event.key);
     }
 
+
+
+
+
     const calculateDeviceWidth = () => {
       setDeviceWidth(window.innerWidth);
     }
+
+
+
+
 
   useEffect( () => {
 
@@ -28,7 +41,11 @@ function Navbar() {
       window.removeEventListener('resize', calculateDeviceWidth);
     };
 
-  },[])
+  },[]);
+
+
+
+
 
   return (
     <Layout id='navbar'>
