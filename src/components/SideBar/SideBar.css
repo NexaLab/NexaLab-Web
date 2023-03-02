@@ -41,7 +41,7 @@
 #sidebar-links li {
     border-bottom: 1px solid #61C2D0 !important;
     border-radius: 0px !important;
-    font-family: ProductSans !important;
+    font-family: ProductSans, sans-serif !important;
     font-weight: 600 !important;
     font-size: 15px !important;
     color: #0D1625 !important;
@@ -102,7 +102,7 @@ background: none !important;
 .services-links {
     border-bottom: 1px solid #61C2D0 !important;
     border-radius: 0px !important;
-    font-family: ProductSans !important;
+    font-family: ProductSans ,sans-serif !important;
     font-weight: 600 !important;
     font-size: 15px !important;
     color: #0D1625;
