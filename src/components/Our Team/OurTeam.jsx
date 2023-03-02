@@ -1,5 +1,6 @@
 import React from 'react'
-import "./OurTeam.css"
+import "./OurTeam.css";
+import "./OurTeamTablet.css"
 import { Layout, Typography } from 'antd';
 import OurTeamUnderline from "../../assets/DashOurTeam.png";
 import OurTeamLeftBox from "../../assets/OurTeamBoxWithBorderRadius.png"
@@ -63,7 +64,7 @@ function OurTeam() {
 
 
                 <div id='our-team-left-content'>
-                    <img src={deviceWidth > 1020 ? OurTeamLeftBox : OurTeamLeftBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
+                    <img src={deviceWidth > 1065 ? OurTeamLeftBox : OurTeamLeftBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
 
 
@@ -255,7 +256,7 @@ function OurTeam() {
 
 
                 <div id='our-team-right-content'>
-                    <img src={deviceWidth > 1020 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
+                    <img src={deviceWidth > 1065 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
             </div>
            
