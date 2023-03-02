@@ -9,6 +9,7 @@ import OurTeamRightBox from "../../assets/Our Team/OurTeamRightBoxWithBorderRadi
 import TeamMemberImage from "../../assets/Our Team/TeamMemberImage.png"
 import OurTeamLeftBorderBoxMobile from "../../assets/Our Team/OurTeamLeftBorderBoxMobile.png";
 import OurTeamRightBorderBoxMobile from "../../assets/Our Team/OurTeamRightBorderBoxMobile.png"
+import { ourTeamMembers } from '../../ProjectData/ProjectData';
 
 
 
@@ -26,7 +27,7 @@ function OurTeam() {
 
 
 
-    const [ deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+    const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
 
 
 
@@ -34,21 +35,21 @@ function OurTeam() {
 
     const calculateDeviceWidth = () => {
         setDeviceWidth(window.innerWidth);
-      }
+    }
 
 
 
 
-  
-    useEffect( () => {
-  
-      window.addEventListener('resize', calculateDeviceWidth);
-  
-      return () => {
-        window.removeEventListener('resize', calculateDeviceWidth);
-      };
-  
-    },[]);
+
+    useEffect(() => {
+
+        window.addEventListener('resize', calculateDeviceWidth);
+
+        return () => {
+            window.removeEventListener('resize', calculateDeviceWidth);
+        };
+
+    }, []);
 
 
 
@@ -61,7 +62,7 @@ function OurTeam() {
             <h1 id="our-team-heading">Our Team</h1>
             <img src={OurTeamUnderline} alt="" />
 
-         
+
 
             <div id='our-team-content'>
 
@@ -82,188 +83,65 @@ function OurTeam() {
 
 
 
-                    <div id='our-team-memeber-content'>
+                    {
 
+                        ourTeamMembers.map(teamMember => {
 
+                            return (
+                                <div id='our-team-memeber-content' key={ teamMember.id }>
 
 
-                        <div id='our-team-memeber-img-container'>
 
-                            <img src={TeamMemberImage} alt="" id='our-team-member-img' />
 
-                        </div>
+                                    <div id='our-team-memeber-img-container'>
 
+                                        <img src={ teamMember.image } alt="" id='our-team-member-img' />
 
+                                    </div>
 
-                        <div id='our-team-memeber-designation-container'>
 
 
-                            <Title
-                                level={5}
-                                id='our-team-member-name'
-                            >
-                                Name
-                            </Title>
+                                    <div id='our-team-memeber-designation-container'>
 
 
-                            <Text id='our-team-member-designation'>Designation</Text>
+                                        <Title
+                                            level={5}
+                                            id='our-team-member-name'
+                                        >
+                                            { teamMember.name }
+                                        </Title>
 
 
-                            <p id='our-team-member-details'>Lorem ipsum dolor sit, </p>
+                                        <Text id='our-team-member-designation'>{ teamMember.designation }</Text>
 
 
+                                        <p id='our-team-member-details'>{ teamMember.desciption } </p>
 
-                        </div>
 
 
+                                    </div>
 
-                    </div>
 
 
+                                </div>
+                            )
 
+                        })
 
-                    <div id='our-team-memeber-content'>
-
-
-
-
-                        <div id='our-team-memeber-img-container'>
-
-                            <img src={TeamMemberImage} alt="" id='our-team-member-img' />
-
-                        </div>
-
-
-
-                        <div id='our-team-memeber-designation-container'>
-
-
-                            <Title
-                                level={5}
-                                id='our-team-member-name'
-                            >
-                                Name
-                            </Title>
-
-
-                            <Text id='our-team-member-designation'>Designation</Text>
-
-
-                            <p id='our-team-member-details'>Lorem ipsum dolor sit, </p>
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-
-                    <div id='our-team-memeber-content'>
-
-
-
-
-                        <div id='our-team-memeber-img-container'>
-
-                            <img src={TeamMemberImage} alt="" id='our-team-member-img' />
-
-                        </div>
-
-
-
-                        <div id='our-team-memeber-designation-container'>
-
-
-                            <Title
-                                level={5}
-                                id='our-team-member-name'
-                            >
-                                Name
-                            </Title>
-
-
-                            <Text id='our-team-member-designation'>Designation</Text>
-
-
-                            <p id='our-team-member-details'>Lorem ipsum dolor sit, </p>
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-                    
-                    <div id='our-team-memeber-content'>
-
-
-
-
-                        <div id='our-team-memeber-img-container'>
-
-                            <img src={TeamMemberImage} alt="" id='our-team-member-img' />
-
-                        </div>
-
-
-
-                        <div id='our-team-memeber-designation-container'>
-
-
-                            <Title
-                                level={5}
-                                id='our-team-member-name'
-                            >
-                                Name
-                            </Title>
-
-
-                            <Text id='our-team-member-designation'>Designation</Text>
-
-
-                            <p id='our-team-member-details'>Lorem ipsum dolor sit, </p>
-
-
-
-                        </div>
-
-
-
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    }
 
 
                 </div>
-
-
 
 
 
                 <div id='our-team-right-content'>
                     <img src={deviceWidth > 1199 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
+
+                
             </div>
-           
+
         </Layout >
     )
 }
