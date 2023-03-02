@@ -1,6 +1,7 @@
-import AfshalImage from "../assets/Our Team/Afshal.png"
-import AnasImage from "../assets/Our Team/Anas.png"
-import TeamMemberImage from "../assets/Our Team/TeamMemberImage.png"
+import AfshalImage from "../assets/Our Team/Afshal.png";
+import AnasImage from "../assets/Our Team/Anas.png";
+import RafayImage from "../assets/Our Team/Rafay.png";
+import AneequeImage from "../assets/Our Team/Aneeque.png"
 
 
 export const ourTeamMembers = 
@@ -25,15 +26,16 @@ export const ourTeamMembers =
         id: 3,
         name: "Abdur Rafay",
         designation: "Full Stack Engineer",
-        image: TeamMemberImage,
+        image: RafayImage,
         desciption:"He is a Software Engineer having expertise in building applications from the ground up, handles everything from the backend and server infrastructure to the frontend user interface."
     },
 
     {
         id: 4,
         name: "Aneeque Junaid",
-        designation: "Frontend Developer",
-        image: TeamMemberImage
+        designation: "Frontend Engineer",
+        image: AneequeImage,
+        desciption: "He has expertise in React and Next.js and is proficient in developing modern and interactive applications. He is skilled in using React to develop and manage application state. " 
     }
 ];
 
