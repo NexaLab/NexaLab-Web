@@ -6,7 +6,6 @@ import { Layout, Typography } from 'antd';
 import OurTeamUnderline from "../../assets/Our Team/DashOurTeam.png";
 import OurTeamLeftBox from "../../assets/Our Team/OurTeamBoxWithBorderRadius.png"
 import OurTeamRightBox from "../../assets/Our Team/OurTeamRightBoxWithBorderRadius.png"
-import TeamMemberImage from "../../assets/Our Team/TeamMemberImage.png"
 import OurTeamLeftBorderBoxMobile from "../../assets/Our Team/OurTeamLeftBorderBoxMobile.png";
 import OurTeamRightBorderBoxMobile from "../../assets/Our Team/OurTeamRightBorderBoxMobile.png"
 import { ourTeamMembers } from '../../ProjectData/ProjectData';
@@ -139,7 +138,7 @@ function OurTeam() {
                     <img src={deviceWidth > 1199 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
 
-                
+
             </div>
 
         </Layout >
