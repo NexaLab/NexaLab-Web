@@ -1,13 +1,14 @@
 import React from 'react'
 import "./OurTeam.css";
-import "./OurTeamTablet.css"
+import "./OurTeamTablet.css";
+import "./OurTeamMobile.css";
 import { Layout, Typography } from 'antd';
-import OurTeamUnderline from "../../assets/DashOurTeam.png";
-import OurTeamLeftBox from "../../assets/OurTeamBoxWithBorderRadius.png"
-import OurTeamRightBox from "../../assets/OurTeamRightBoxWithBorderRadius.png"
-import TeamMemberImage from "../../assets/TeamMemberImage.png"
-import OurTeamLeftBorderBoxMobile from "../../assets/OurTeamLeftBorderBoxMobile.png";
-import OurTeamRightBorderBoxMobile from "../../assets/OurTeamRightBorderBoxMobile.png"
+import OurTeamUnderline from "../../assets/Our Team/DashOurTeam.png";
+import OurTeamLeftBox from "../../assets/Our Team/OurTeamBoxWithBorderRadius.png"
+import OurTeamRightBox from "../../assets/Our Team/OurTeamRightBoxWithBorderRadius.png"
+import TeamMemberImage from "../../assets/Our Team/TeamMemberImage.png"
+import OurTeamLeftBorderBoxMobile from "../../assets/Our Team/OurTeamLeftBorderBoxMobile.png";
+import OurTeamRightBorderBoxMobile from "../../assets/Our Team/OurTeamRightBorderBoxMobile.png"
 import { useState, useEffect } from 'react';
 
 
@@ -25,7 +26,10 @@ const { Text } = Typography;
 
 function OurTeam() {
 
+
+
     const [ deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+
 
 
 
@@ -46,7 +50,9 @@ function OurTeam() {
         window.removeEventListener('resize', calculateDeviceWidth);
       };
   
-    },[])
+    },[]);
+
+
 
 
 
@@ -64,7 +70,7 @@ function OurTeam() {
 
 
                 <div id='our-team-left-content'>
-                    <img src={deviceWidth > 1065 ? OurTeamLeftBox : OurTeamLeftBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
+                    <img src={deviceWidth > 1199 ? OurTeamLeftBox : OurTeamLeftBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
 
 
@@ -256,7 +262,7 @@ function OurTeam() {
 
 
                 <div id='our-team-right-content'>
-                    <img src={deviceWidth > 1065 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
+                    <img src={deviceWidth > 1199 ? OurTeamRightBox : OurTeamRightBorderBoxMobile} alt="" className="our-team-content-left-and-right-box" />
                 </div>
             </div>
            

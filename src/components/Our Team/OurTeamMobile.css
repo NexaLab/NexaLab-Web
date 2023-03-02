@@ -1,4 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
 
 
 
@@ -25,8 +28,11 @@
 
 
 
+/*                           For Mobiles                                                    */
 
-@media screen and (max-width: 920px) and (min-width:500px)  {
+
+
+@media (max-width: 499px) {
 
 
 
@@ -36,7 +42,7 @@
 
         width: 100% !important;
         height: fit-content !important;
-   
+        border: 1px solid red !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -56,7 +62,6 @@
 
         color: #61dafb !important;
         font-family: 'Montserrat', sans-serif !important;
-        font-size: 27px !important;
         font-weight: 599 !important;
 
     }
@@ -71,7 +76,6 @@
         font-weight: 500 !important;
         font-size: 40px !important;
         font-family: ProductSans !important;
-        font-size: 50.25px !important;
         margin-top: 0px !important;
         margin-bottom: 17px !important;
     }
@@ -99,7 +103,7 @@
 
 
     .our-team-content-left-and-right-box {
-        width:48px  !important;
+        width:30px  !important;
         height: 100% !important;
     }
 
@@ -123,6 +127,7 @@
 
 
 
+
     #our-team-memeber-content {
 
         width: 380px  !important;
@@ -135,7 +140,6 @@
 
 
     }
-
 
 
 
@@ -159,11 +163,10 @@
 
 
 
-
-
     #our-team-memeber-designation-container {
         width: calc(100% - 50px);
         height:fit-content;
+      
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -183,8 +186,8 @@
 
     #our-team-member-img {
 
-        width: 190px !important;
-        height: 190px !important;
+        width: 130px !important;
+        height: 130px !important;
         box-sizing: border-box !important;
     }
  
@@ -199,7 +202,7 @@
         font-family: ProductSans !important;
         margin-bottom: 1.5px !important;
         margin-top: 15px !important;
-        font-size: 25.5px !important;
+        font-size: 18px !important;
         
 
     }
@@ -213,7 +216,7 @@
 
         color: #61dafb !important;
         font-family:  ProductSansRegular;
-        font-size: 22px !important;
+        font-size: 15px !important;
     }
 
 
@@ -225,7 +228,7 @@
 
         font-family:  ProductSansRegular !important;
         text-align: center !important;
-        font-size: 18.75px !important;
+
 
     }
     
@@ -240,17 +243,15 @@
 
 
 
-@media screen and (max-width:1199px) and (min-width: 921px) {
+/* @media (max-width: 1065px) {
 
 
 
 
-    
-    #our-team-member-img {
 
-        width: 130px !important;
-        height: 130px !important;
-        box-sizing: border-box !important;
+    .our-team-content-left-and-right-box {
+        width:30px  !important;
+        height: 100% !important;
     }
 
 
@@ -267,26 +268,49 @@
 
 
 
-
-
-    #our-team-middle-content {
-    
-        display: flex  !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content:space-evenly !important ;
-        /* flex-wrap: wrap !important; */
-        height: fit-content !important;
-        width: 75% !important;
-    }
+  
+} */
 
 
 
 
+
+
+
+
+
+@media screen and (min-width:390px) and (max-height: 920px) {
     
 
-    .our-team-content-left-and-right-box {
-        width:30px  !important;
-        height: 100% !important;
-    }
+
+
+
+
+
+#our-team-member-name{
+
+
+    font-family: ProductSans !important;
+    margin-bottom: 0px !important;
+    font-size: 20px !important;
+    
+
+}
+
+
+
+
+
+
+
+
+
+#our-team-member-designation {
+
+    color: #61dafb !important;
+    font-family:  ProductSansRegular;
+    font-size: 17px !important;
+}
+
+
 }
