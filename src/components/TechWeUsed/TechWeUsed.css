@@ -1,0 +1,70 @@
+
+
+@media (min-width: 1200px) {
+
+
+
+    #tech-we-used-layout {
+
+        background: #0D1625 !important;
+        width: 100% !important;
+        height: 370px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+    }
+
+
+
+
+
+    #tech-how-we-used-heading{
+
+        color: #61C2D0 !important;
+    }
+
+
+
+
+
+    #tech-we-used-heading {
+
+        color: white !important;
+        margin-top: 0px !important;
+    }
+
+
+
+
+    #tech-we-used-carousel-container {
+
+
+        background-color: white !important;
+        width: 80% !important;
+        height: 148px !important;
+        border-radius: 80px !important;
+        margin-top: 60px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding-top: 13px !important;
+        padding-left: 50px !important;
+        padding-right: 100px !important;
+    }
+    
+
+
+
+    .alice-carousel__stage-item {
+         
+        width: fit-content !important;
+    }
+
+
+
+
+
+}
