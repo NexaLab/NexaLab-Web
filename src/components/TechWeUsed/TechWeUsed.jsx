@@ -75,8 +75,10 @@ function TechWeUsed() {
         0: {
             items: 1,
         },
-
-        512: {
+        500: {
+            items: 2,
+        },
+        600: {
             items: 3,
         },
 
