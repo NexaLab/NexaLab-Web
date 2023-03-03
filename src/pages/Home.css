@@ -1,5 +1,5 @@
 #home-container {
-    width: 99.8%;
-    height: 100vh;
+    width: fit-content !important;
+    height: fit-content !important;
     border: 1px solid red;
 }

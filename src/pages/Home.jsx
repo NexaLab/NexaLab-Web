@@ -1,16 +1,15 @@
 import React from 'react';
 import "./Home.css";
-
-
-
+import Navbar from "../components/Navbar/Navbar";
+import OurService from "../components/Our Service/OurService";
+import OurTeam from "../components/Our Team/OurTeam";
 
 function Home() {
   return (
     <>
-        <div id='home-container'>
-
-        </div>
-
+        <Navbar/>
+        <OurService/>
+        <OurTeam/>
     </>
   )
 }
