@@ -3,15 +3,15 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./TechWeUsed.css";
 import "./TechWeUsedTablet.css";
 import "./TechWeUsedMobile.css";
-import "./Card/TechStackCard.css"
-import "./Card/TechStackCardMobile.css";
-import "./Card/TechStackCardTablet.css";
 import { technologiesWeUsed } from '../../ProjectData/ProjectData';
 import PrevButton from "../../assets/TechWeUsed/PrevTechStackBtn.png";
 import NextButton from "../../assets/TechWeUsed/NextTechStackBtn.png"
 import TechStackUnderline from '../../assets/TechWeUsed/TechStackDash.png';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import TechStackCard from './Card/TechStackCard';
+
+
 
 
 
@@ -21,6 +21,8 @@ const { Title } = Typography;
 
 
 function TechWeUsed() {
+
+
 
     const [ carouselitems, setCarouselItems] = useState([]);
  
@@ -51,20 +53,17 @@ function TechWeUsed() {
 
         setCarouselItems(technologiesWeUsed);
 
-    },[])
+    },[]);
+
+
 
 
 
     
-    const techItems = carouselitems.map(technology => {
+    const techItems = carouselitems.map(technology => <TechStackCard key = { technology.id } 
+        techImage = { technology.techImage }
+    />);
 
-        return (
-            <div id='tech-stack-card' key={technology.id}>
-                <img src={technology.techImage} alt="" />
-            </div>
-        )
-    
-    });
 
 
 
@@ -85,8 +84,6 @@ function TechWeUsed() {
             items: 6,
         }
     };
-
-
 
 
 
@@ -117,7 +114,7 @@ function TechWeUsed() {
                     <AliceCarousel
                     
                     ref = { techStackCarouselRef }
-                    
+
                     infinite
                     mouseTracking
                     autoPlay
