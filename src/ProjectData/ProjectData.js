@@ -1,6 +1,6 @@
 export const testinomials = [
     {   id: 1,
-        paragraph: "Project delivered on time and also explained us how the project works on live meeting.NexaLab has the best developers to work with. Thank you NexaLab for your help on my Spring boot and React project.",
+        paragraph: "Project delivered on time and also explained us how the project works on live meeting. NexaLab has the best developers to work with. Thank you NexaLab for your help on my Spring boot and React project.",
         name: "etechwebschool",
         Country: "USA"
     },

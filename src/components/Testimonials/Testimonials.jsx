@@ -20,7 +20,7 @@ function Testimonials() {
                 </span>                
                 <img className='border-img' src={Border} alt='border'></img>
                 </div>
-                <Carousel autoplay  className='carousel'  >
+                <Carousel autoplay autoplaySpeed ={10000}  className='carousel'  >
                 {testinomials.map((testinomial,index)=> (
                   <div >
             <img key={index} className='carousel-img' src={Apostrophe} alt="Aposhtrophe"></img>
