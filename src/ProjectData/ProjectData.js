@@ -9,6 +9,7 @@ import JSImage from "../assets/TechWeUsed/JavascriptImage.png";
 import ReduxImage from "../assets/TechWeUsed/ReduxImage.png";
 import FlutterImage from "../assets/TechWeUsed/Flutter.png";
 import DockerImage from "../assets/TechWeUsed/DockerImage.png";
+import SonarCloudImage from "../assets/TechWeUsed/SonarCloud.png";
 
 
 
@@ -63,6 +64,11 @@ export const technologiesWeUsed = [
     {
         id: 10,
         techImage: DockerImage
+    },
+
+    {
+        id: 11,
+        techImage: SonarCloudImage
     },
 ]
 
