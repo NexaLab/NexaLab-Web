@@ -49,11 +49,16 @@ function TechWeUsed() {
 
 
 
+
+
+
     useEffect( () => {
 
         setCarouselItems(technologiesWeUsed);
 
     },[]);
+
+
 
 
 
@@ -68,6 +73,7 @@ function TechWeUsed() {
 
 
  
+
 
 
     const responsive = {
