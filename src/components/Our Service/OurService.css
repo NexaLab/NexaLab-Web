@@ -1,23 +1,39 @@
 
 /* Layout */
+
+
+
 .main {
     background-color: #ffff;
     position: relative;
     text-align: center;
 }
 
+
+
+
 /* Grid Column */
+
+
+
 .col {
     margin-top: 155px;
 }
 
 
 /* images */
+
+
+
 .border-img {
     margin-bottom: 50px;
      margin-top: -22px;
       width: 40px;
 }
+
+
+
+
 
 .logo {
     width: 30%;
@@ -30,16 +46,31 @@
 
 
 /* Headings */
+
+
+
+
 .span {
     color: #61C2D0 ;
      font-size: 17px;
 }
+
+
+
+
+
 
 .h2 {
     margin-top: -3px;
  color: #0D1625;
   font-size: 40px
 }
+
+
+
+
+
+
 
 .service-heading {
     text-align: center;
@@ -49,9 +80,27 @@
 }
 
 /* Cards Components*/
+
+
+
+
+
+.card-col
+{   display: flex !important; 
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+
+
+
+
+
+
 .card {
     width: 370px;
-    height: 430px; 
+    height: 380px; 
     text-align: center;
     margin-left: 3px;
     border-top-left-radius: 15%;
@@ -63,6 +112,11 @@
   
 }
 
+
+
+
+
+
 .card-img {
     /* width: 200px; */
     height: 208px;
@@ -70,9 +124,18 @@
   
 }
 
+
+
+
+
 .card-h2 {
     padding-top: 10px
 }
+
+
+
+
+
 
 .card .ant-card-cover{
     width: 70%;
@@ -83,6 +146,11 @@
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (max-width:420px) {
+
+
+
+
+
     .card-col
 {   display: flex; 
     flex-direction: column;
@@ -90,6 +158,12 @@
     justify-content: center;
 
 }
+
+
+
+
+
+
 .card {
     height: 370px;
     display: flex;
@@ -98,6 +172,12 @@
     justify-content: center;
     width: 90%;
 } 
+
+
+
+
+
+
 .logo {
     width: 40%;
     position: absolute;
@@ -105,6 +185,13 @@
     z-index: -2px;
     top: -9px
 }
+
+
+
+
+
+
+
 .service-heading {
     text-align: center;
      color:   black ;
@@ -112,45 +199,101 @@
      margin-top: 5px;
 }
 
+
+
+
+
+
+
+.service-heading span {
+
+    font-size: 23px !important;
+
+ }
+
+
+
+
+
+
+.service-heading h2 {
+
+    font-size: 40px !important;
 }
+
+
+}
+
+
+
+
+
+
 
 /* hi-res laptops and desktops */
 @media (min-width:1024px) {
+
+
+
+
 
     .card-col {
     display: flex;
     flex-direction: row;  
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
+    padding: 10px;
     
 }
+
+
+
+
+
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
 }
 
 
 } 
 
+
+
+
+
+
+
 @media (max-width: 1024px) and (min-width: 600px) {
+
+
+
     .service-heading {
         text-align: center;
          color:   black ;
          font-size: 25px;
          margin-top: 100px;
     }
+
+
+
+
+
     .card-col {
         display: flex;
         flex-direction: row;  
         margin-left: -2px;
-        padding: 20px;
+        padding: 10px;
         
     }
+
+
+
+
+
     .card {
         display: flex;
         flex-direction: column;
@@ -159,12 +302,85 @@
         margin-left: 12px;
         width: 70%;
     }
+
+
+
+
+
     .logo {
         margin-top: -12px;
     }
+
+
+
+
+
+    .service-heading span {
+
+        font-size: 37px !important;
+    
+     }
+    
+
+
+
+    
+    .service-heading h2 {
+    
+        font-size: 70px !important;
+    }
+
+
+
+
+
+
+    .card-h2 {
+
+        font-size: 32px !important;
+     }
 }
 
+
+
+
+
+
+
+
+@media (max-width: 599px) and (min-width: 500px) {
+
+
+
+
+    
+    .service-heading span {
+
+        font-size: 27px !important;
+    
+     }
+    
+
+
+
+    
+    .service-heading h2 {
+    
+        font-size: 50px !important;
+    }
+
+
+
+}
+
+
+
+
 @media (max-width: 1025px) and (min-width: 601px){
+
+
+
+
     .card-col {
         display: flex;
         flex-direction: column;
@@ -174,21 +390,35 @@
         /* flex-direction: row;
         display: flex; */
     }
+
+
+
+
+
     .card {
         /* width: 40%; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 510px;
+        height: 565px;
+
         
         /* height: 550px; */
     }
 
 
+
+
+
+
     .card-img {
         height: 300px;
     }
+
+
+
+
 
     .logo {
         width: 30%;
@@ -198,8 +428,23 @@
         top: -9px
     }
 
+
+
+
+
 }
+
+
+
+
+
+
+
 @media (min-width: 540px) and (max-width: 720px) {
+
+
+
+
     .card-col {
         display: flex;
         flex-direction: column;
@@ -209,22 +454,33 @@
         /* flex-direction: row;
         display: flex; */
     }
+
+
+
+
     .card {
         width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 490px;
+        height: 460px;
         
         /* height: 550px; */
     }
+
+
+
 
 
     .card-img {
 
         height: 300px;
     }
+
+
+
+
 
     .logo {
         width: 30%;
@@ -233,26 +489,45 @@
         z-index: -2px;
         top: -9px
     }
+
+
+
+
+
     .service-heading {
         text-align: center;
          color:   black ;
          font-size: 25px;
          margin-top: 10px;
     }
+
+
+
     
 }
 
 /* hi-res laptops and desktops */
+
+
  @media (min-width:1281px) {
+
+
+
+
 
     .card-col {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;  
     margin-left: -2px;
-    padding: 20px;
+    padding: 10px;
     
 }
+
+
+
+
+
 .card {
     display: flex;
     flex-direction: column;
@@ -260,4 +535,7 @@
     justify-content: center;
     margin-left: 12px;
 }
+
+
+
 } 
