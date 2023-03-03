@@ -1,4 +1,21 @@
 
+//              Import assets for Our Team Home Section                            
+
+
+import AfshalImage from "../assets/Our Team/Afshal.png";
+import AnasImage from "../assets/Our Team/Anas.png";
+import RafayImage from "../assets/Our Team/Rafay.png";
+import AneequeImage from "../assets/Our Team/Aneeque.png"
+
+
+
+
+
+
+
+
+
+
 export const testinomials = [
     {   id: 1,
         paragraph: "Project delivered on time and also explained us how the project works on live meeting. NexaLab has the best developers to work with. Thank you NexaLab for your help on my Spring boot and React project.",
@@ -41,10 +58,7 @@ export const testinomials = [
 
 
 
-import AfshalImage from "../assets/Our Team/Afshal.png";
-import AnasImage from "../assets/Our Team/Anas.png";
-import RafayImage from "../assets/Our Team/Rafay.png";
-import AneequeImage from "../assets/Our Team/Aneeque.png"
+
 
 
 
