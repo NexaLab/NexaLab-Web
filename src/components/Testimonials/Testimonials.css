@@ -4,7 +4,8 @@
     background-color: #ffff;
     position: relative;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+
 
 }
 .row {
@@ -12,36 +13,44 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 /* Main Heading */
 .h2 {
     margin-top: -3px;
      color: #0D1625;
-      font-size: 40px
+      font-size: 35px;
+      margin-bottom: -40px;
+      margin-left: -90px;
 }
 
 .testimonial-heading {
-    margin-left: 110px;
+    margin-left:  60px;
+    margin-top: 130px;
 }
 
 .span {
     color: #61C2D0; 
-     font-size: 17px
+     font-size: 17px;
+     margin-left: -100px;
 }
 .border-img {
-    margin-bottom: 50px;
-     margin-top: -22px;
+    margin-bottom: -35px;
+     /* margin-top: 120px; */
       width: 80px; 
-       height: 4px
+       height: 4px;
+       margin-left: -100px;
+
 }
 
 /* image  */
 .rectangle-img {
-    width: 50%;
-    margin-top: 20%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 15%;
+    margin-top: -40%;
+    
+  
 }
 
 
@@ -49,11 +58,12 @@
 /* Carousel Styling  */
 .col {
     margin-top: 50px;
+    /* padding-right: 60px; */
 }
 .carousel {
-    height: 420px;
-     margin-left: 95px;
-     margin-top: -45px
+    height: 370px;
+     margin-left: -100px;
+     /* background-color: #0D1625; */
 }
 .carousel-para {
     width: 500px;
