@@ -24,16 +24,18 @@ function OurService() {
                 </Col>     
       </Row>
       <Row>
-        <Col span={24} className ='card-col'>
+      <Col span={24} className ='card-col'>
           {ServicesList.map((services,index) => (
+            
             <Card
            className='card'
            key={index}
             cover={<img alt="services" className='card-img' src={services.image} />} >
           <h2 className='card-h2'>  {services.name} <Meta/></h2>
                   </Card>
+                  
           ))}
-        </Col>
+          </Col>
       </Row>
       </Content>
       </Layout>

@@ -123,6 +123,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
     
 }
 .card {
@@ -245,8 +246,9 @@
  @media (min-width:1281px) {
 
     .card-col {
-    display: flex;
-    flex-direction: row;  
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;  
     margin-left: -2px;
     padding: 20px;
     
