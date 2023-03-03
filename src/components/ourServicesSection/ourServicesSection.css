@@ -5,31 +5,38 @@
     width:100%;
     height:600px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .container{
+    display: flex;
+    flex-direction: row;
     width:80%;
-    height: 80%;
+    height: 80%;;
 }
+
 .paragraph{
+    align-items: center;
+    justify-content: center;
     border:1px solid black;
     height:100%;
-    width:50%;
+    width:60%;
     display: flex;
     flex-direction: column;
 }
 .image{
-    width:50%;
+    width:40%;
     border:1px solid black;
     height:100%;
 }
 .heading{
-    height: 25%;
+    height: 20%;
     width: 100%;
     border:1px solid black;
 
 }
 .content{
-    height:75%;
+    height:70%;
     width:100%;
     border:1px solid black;
 
