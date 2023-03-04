@@ -177,7 +177,6 @@ function SideBar() {
                 marginRight:24,
                 cursor:"pointer"
             }}
-            id = "hamburger"
             />
         </Layout>
     )
