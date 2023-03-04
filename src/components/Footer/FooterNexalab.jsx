@@ -1,14 +1,24 @@
 import React from 'react'
-import { Layout, Typography,Input,Button,Divider } from 'antd';
+import { Layout, Typography,Input,Button } from 'antd';
 import "./FooterNexalab.css"
-import NexaLabLogo from "../../assets/NexaLabLogo.svg"
+import NexaLabLogo from "../../assets/footerImages/NexaLabLogo.svg"
 import { Link } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
+import FacebookImg from '../../assets/footerImages/Facebook.png'
+import LinkedinImg from '../../assets/footerImages/Linkedin.png'
+import TwitterImg from '../../assets/footerImages/Twitter.png'
 const { Text } = Typography;
-const { Title } = Typography;
 const { Footer } = Layout;
 
 function FooterNexalab() {
+  const fbLink = () =>{
+    window.open("https://www.facebook.com/")
+  }
+  const linkedInLink = () =>{
+    window.open("https://www.linkedin.com/")
+  }
+  const twitterLink = () =>{
+    window.open("https://www.twitter.com/")
+  }
   return (
       <Footer className='footer'>
         <Layout className='main-footer'>
@@ -34,9 +44,9 @@ function FooterNexalab() {
             <Layout className='main-footer-right'>
               <Text className='text' id='followus'>Follow Us</Text>
               <Layout className='footer-right-icon-container'>
-                <div className='footer-right-icon'><SocialIcon url='https://www.facebook.com/' target="_blank" /></div>
-                <div className='footer-right-icon'><SocialIcon url='https://twitter.com/' target="_blank" /></div>
-                <div className='footer-right-icon'><SocialIcon url='https://linkedin.com/' target="_blank" /></div>
+                <div className='footer-right-icon'><img src={FacebookImg} alt="" onClick={() => {fbLink()}}/></div>
+                <div className='footer-right-icon'><img src={LinkedinImg} alt="" onClick={() => {linkedInLink()}}/></div>
+                <div className='footer-right-icon'><img src={TwitterImg} alt="" onClick={() => {twitterLink()}}/></div>
               </Layout>
               <Text className='text' id='contactus'>Contact Us!</Text>
               <Layout className='mail-button-container'>
