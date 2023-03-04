@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     width: 100%;
 
 }
@@ -12,7 +11,6 @@
 .container {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     width: 87%;
     height: 80%;
     ;
@@ -21,7 +19,6 @@
 .paragraph {
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     height: 100%;
     width: 60%;
     display: flex;
@@ -29,22 +26,23 @@
 }
 
 .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 40%;
-    border: 1px solid black;
     height: 100%;
 }
 
 .heading {
     height: 20%;
     width: 100%;
-    border: 1px solid black;
 
 }
 
 .content {
     height: 70%;
     width: 100%;
-    border: 1px solid black;
 
 }
 
@@ -79,6 +77,12 @@ h1 {
     text-align: left;
 
 }
+.pic{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
 
 @media (max-width:500px) {
     .container {
@@ -95,8 +99,7 @@ h1 {
     .paragraph {
         align-items: center;
         justify-content: center;
-        border: 1px solid black;
-        height: 100%;
+            height: 100%;
         width: 95%;
         display: flex;
         flex-direction: column;

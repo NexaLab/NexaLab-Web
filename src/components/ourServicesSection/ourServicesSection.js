@@ -1,5 +1,7 @@
 import React from 'react'
 import './ourServicesSection.css'
+import pic from './pic.png'
+
 function ourServicesSection() {
     return (
         <div className='section'>
@@ -16,7 +18,7 @@ purposes, including business, entertainment, education, healthcare, and more. We
                     </div>
                 </div>
                 <div className='image'>
-                    <img src='./pic.png' alt="" />
+                    <img src={pic} alt="" className='pic' />
                 </div>
             </div>
 
