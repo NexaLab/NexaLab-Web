@@ -85,11 +85,11 @@
     text-align: justify;
      font-size: 19px;
       margin-left: 80px;
-     font-family:  ProductSansRegular !important;
+     font-family:  ProductSansRegular,sans-serif !important;
 }
 .carousel-h3 {
     margin-right: -14%;
-    font-family:  ProductSans !important;
+    font-family:  ProductSans,sans-serif !important;
 }
 .carousel-img {
     margin-left: 30px;
@@ -184,7 +184,7 @@
         text-align: justify;
         font-size: 13px !important;
           margin-left: 20px !important;
-          font-family:  ProductSansRegular !important;
+          font-family:  ProductSansRegular,sans-serif !important;
 
 
     }
@@ -195,7 +195,7 @@
     }
     .carousel-h3 {
         margin-left: -45%;
-        font-family:  ProductSans !important;
+        font-family:  ProductSans,sans-serif !important;
 
     }
     
@@ -244,7 +244,7 @@
         text-align: justify;
          font-size: 20px;
           margin-left: 20px;
-          font-family:  ProductSansRegular !important;
+          font-family:  ProductSansRegular,sans-serif !important;
 
 
     }
@@ -255,7 +255,7 @@
     }
     .carousel-h3 {
         margin-left: -61%;
-        font-family:  ProductSans !important;
+        font-family:  ProductSans,sans-serif !important;
 
     }
     .carousel-span {
@@ -339,7 +339,7 @@
         text-align: justify;
          font-size: 20px;
           margin-left: 20px;
-          font-family:  ProductSansRegular !important;
+          font-family:  ProductSansRegular,sans-serif !important;
 
 
     }
@@ -350,7 +350,7 @@
     }
     .carousel-h3 {
         margin-left: -61%;
-        font-family:  ProductSans !important;
+        font-family:  ProductSans,sans-serif !important;
 
     }
     .carousel-span {
