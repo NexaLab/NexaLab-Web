@@ -5,7 +5,6 @@ import OurService from "../components/Our Service/OurService";
 import OurTeam from "../components/Our Team/OurTeam";
 import ConnectUs from "../components/ConnectUs/ConnectUs";
 import Testimonials from "../components/Testimonials/Testimonials";
-import Footer from "../components/Footer/FooterNexalab"
 import FooterNexalab from '../components/Footer/FooterNexalab';
 
 
@@ -22,6 +21,7 @@ function Home() {
         <OurTeam/>
         <ConnectUs/>
         <Testimonials/>
+        <FooterNexalab/>
 
         
     </>

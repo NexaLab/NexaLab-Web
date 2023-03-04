@@ -12,8 +12,6 @@
 
 * {
     font-family: ProductSansRegular;
-    font-size: large !important;
-    color: white !important;
 }
 
 
@@ -45,6 +43,35 @@
 }
 
 
+#followus {
+    color: white !important;
+    font-size: 20px !important;
+}
+
+
+#contactus {
+
+    color: white !important;
+    font-size: 20px !important;
+}
+
+.footer-mid-link-container .footer-mid-link{
+
+    color: white !important;
+}
+
+
+.main-footer-mid .text{
+
+    color: white !important;
+    font-size: 20px !important;
+}
+
+
+#rights {
+    color: white !important;
+}
+
 
 .sec-footer {
     width: 100% !important;
@@ -52,6 +79,20 @@
     background-color: #0D1625 !important;
     padding-bottom: 50px;
 }
+
+
+.main-footer-left .text {
+
+    color: white !important;
+    font-size: 20px !important;
+}
+
+
+.main-footer-left p {
+
+    color: white !important;
+}
+
 
 
 .main-footer-left{

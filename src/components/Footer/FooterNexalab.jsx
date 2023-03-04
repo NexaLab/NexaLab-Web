@@ -57,7 +57,7 @@ function FooterNexalab() {
         </Layout>
           <Layout className='sec-footer'>
             <hr className='divider'/>
-            <Text style={{marginTop: "15px"}}>© 2022. All rights reserved.</Text>
+            <Text style={{marginTop: "15px"}} id="rights">© 2022. All rights reserved.</Text>
           </Layout>
       </Footer>
   )
