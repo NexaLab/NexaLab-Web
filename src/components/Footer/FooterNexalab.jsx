@@ -10,14 +10,17 @@ const { Text } = Typography;
 const { Footer } = Layout;
 
 function FooterNexalab() {
+
+  
+
   const fbLink = () =>{
-    window.open("https://www.facebook.com/")
+    window.location.href = "https://www.facebook.com/";
   }
   const linkedInLink = () =>{
-    window.open("https://www.linkedin.com/")
+    window.location.href ="https://www.linkedin.com/";
   }
   const twitterLink = () =>{
-    window.open("https://www.twitter.com/")
+    window.location.href ="https://www.twitter.com/";
   }
   return (
       <Footer className='footer'>
@@ -62,3 +65,6 @@ function FooterNexalab() {
       </Footer>
   )
 }
+
+
+export default FooterNexalab;

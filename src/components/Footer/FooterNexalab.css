@@ -46,6 +46,8 @@
 #followus {
     color: white !important;
     font-size: 20px !important;
+    font-family: ProductSans, sans-serif !important;
+
 }
 
 
@@ -53,11 +55,15 @@
 
     color: white !important;
     font-size: 20px !important;
+    font-family: ProductSans, sans-serif !important;
+
 }
 
 .footer-mid-link-container .footer-mid-link{
 
     color: white !important;
+    font-family: ProductSansRegular,sans-serif !important;
+
 }
 
 
@@ -65,11 +71,20 @@
 
     color: white !important;
     font-size: 20px !important;
+    font-family: ProductSans, sans-serif !important;
+
 }
 
 
 #rights {
     color: white !important;
+    font-family: ProductSansRegular, sans-serif !important;
+
+}
+
+
+.footer-right-icon{
+    cursor:  pointer !important;
 }
 
 
@@ -85,10 +100,13 @@
 
     color: white !important;
     font-size: 20px !important;
+    font-family: ProductSans, sans-serif !important;
+
 }
 
 
 .main-footer-left p {
+    font-family: ProductSansRegular, sans-serif !important;
 
     color: white !important;
 }
