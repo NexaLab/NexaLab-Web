@@ -6,6 +6,7 @@ import OurTeam from "../components/Our Team/OurTeam";
 import ConnectUs from "../components/ConnectUs/ConnectUs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import FooterNexalab from '../components/Footer/FooterNexalab';
+import Hero from "../components/Hero/Hero"
 
 
 
@@ -17,6 +18,7 @@ function Home() {
     <>
 
         <Navbar/>
+        <Hero/>
         <OurService/>
         <OurTeam/>
         <ConnectUs/>
