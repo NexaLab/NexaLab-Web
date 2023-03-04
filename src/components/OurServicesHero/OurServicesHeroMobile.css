@@ -161,4 +161,43 @@
 }
 
 
+
+}
+
+
+
+
+
+
+
+@media (max-width: 280px) {
+
+
+
+
+    #our-services-hero-img {
+        width: 250px !important;
+        height: 150px !important;
+    }
+
+
+
+
+    #our-services-hero-title {
+
+        color: white !important;
+        font-family: ProductSans, sans-serif !important;
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+
+
+
+    #our-services-hero-button {
+
+        padding-left: 25.5px !important;
+        padding-right: 25.5px !important;
+    }
+    
+
 }
