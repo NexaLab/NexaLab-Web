@@ -1,18 +1,25 @@
 import React from 'react'
-import { Layout, Typography } from 'antd';
+import { Layout, Typography,Input,Button } from 'antd';
 import "./FooterNexalab.css"
-import NexaLabLogo from "../../assets/NexaLabLogo.svg"
+import NexaLabLogo from "../../assets/footerImages/NexaLabLogo.svg"
 import { Link } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
-import { Button } from 'antd';
-import { Input } from 'antd';
+import FacebookImg from '../../assets/footerImages/Facebook.png'
+import LinkedinImg from '../../assets/footerImages/Linkedin.png'
+import TwitterImg from '../../assets/footerImages/Twitter.png'
 const { Text } = Typography;
-const { Title } = Typography;
 const { Footer } = Layout;
 
 function FooterNexalab() {
+  const fbLink = () =>{
+    window.open("https://www.facebook.com/")
+  }
+  const linkedInLink = () =>{
+    window.open("https://www.linkedin.com/")
+  }
+  const twitterLink = () =>{
+    window.open("https://www.twitter.com/")
+  }
   return (
-    <Layout>
       <Footer className='footer'>
         <Layout className='main-footer'>
             <Layout className='main-footer-left'>
@@ -25,7 +32,7 @@ function FooterNexalab() {
               </p>
             </Layout>
             <Layout className='main-footer-mid'>
-              <Text className='text margin-text'>More Information</Text>
+              <Text className='text'>More Information</Text>
               <Layout className='footer-mid-link-container'>
                 <Link className='footer-mid-link' to='/'>Home</Link>        
                 <Link className='footer-mid-link' to='/about'>About Us</Link>      
@@ -35,13 +42,13 @@ function FooterNexalab() {
               </Layout>
             </Layout>
             <Layout className='main-footer-right'>
-              <Text>Follow Us</Text>
+              <Text className='text' id='followus'>Follow Us</Text>
               <Layout className='footer-right-icon-container'>
-                <div className='footer-right-icon'><SocialIcon url='https://www.facebook.com/' target="_blank" /></div>
-                <div className='footer-right-icon'><SocialIcon url='https://twitter.com/' target="_blank" /></div>
-                <div className='footer-right-icon'><SocialIcon url='https://linkedin.com/' target="_blank" /></div>
+                <div className='footer-right-icon'><img src={FacebookImg} alt="" onClick={() => {fbLink()}}/></div>
+                <div className='footer-right-icon'><img src={LinkedinImg} alt="" onClick={() => {linkedInLink()}}/></div>
+                <div className='footer-right-icon'><img src={TwitterImg} alt="" onClick={() => {twitterLink()}}/></div>
               </Layout>
-              <Text>Contact Us!</Text>
+              <Text className='text' id='contactus'>Contact Us!</Text>
               <Layout className='mail-button-container'>
                 <Input className='right-footer-input' size="large" shape='round' placeholder='mail@example.com'/>
                 <Button className='right-footer-btn' type="primary" size='large' shape="round">SEND</Button>
@@ -49,10 +56,10 @@ function FooterNexalab() {
           </Layout>
         </Layout>
           <Layout className='sec-footer'>
-            <Text className='text'>© 2022. All rights reserved.</Text>
+            <hr className='divider'/>
+            <Text style={{marginTop: "15px"}}>© 2022. All rights reserved.</Text>
           </Layout>
       </Footer>
-    </Layout>
   )
 }
 
