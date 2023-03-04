@@ -62,5 +62,3 @@ function FooterNexalab() {
       </Footer>
   )
 }
-
-export default FooterNexalab
