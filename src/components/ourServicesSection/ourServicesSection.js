@@ -1,6 +1,7 @@
 import React from 'react'
 import './ourServicesSection.css'
 import pic from './pic.png'
+import underline from './Rectangle 27.png'
 
 function ourServicesSection() {
     return (
@@ -9,6 +10,7 @@ function ourServicesSection() {
                 <div className='paragraph'>
                     <div className='heading'>
                         <h1>Best Software House in Pakistan Offering Top-Notch Services</h1>
+                        <img src={underline} alt='' className='underline'/>  
                     </div>
                     <div className='content'>
                         <p className='bold-text'><b>We Are Not Just Serving Our Clients. We Are Serving The Nation. Best Software House In Pakistan For A Reason.</b></p>
