@@ -26,7 +26,7 @@ export const testinomials = [
     {
         id: 5,
         paragraph: "NexaLab was helpful during and also after the project. Highly recommend for developing CRUD applications.",
-        name: "Shreenath",
+        name: "Shreenath advani",
         Country: "India"
 
     }

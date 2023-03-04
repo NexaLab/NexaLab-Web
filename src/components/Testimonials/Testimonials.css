@@ -4,7 +4,6 @@
     background-color: #ffff;
     position: relative;
     text-align: center;
-    /* padding-top: 20px; */
 
 
 }
@@ -13,7 +12,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* margin-top: 20px; */
 }
 
 /* Main Heading */
@@ -37,7 +35,6 @@
 }
 .border-img {
     margin-bottom: -35px;
-     /* margin-top: 120px; */
       width: 80px; 
        height: 4px;
        margin-left: -100px;
@@ -47,23 +44,27 @@
 /* image  */
 .rectangle-img {
     width: 90%;
-    margin-left: 15%;
-    margin-top: -40%;
+    margin-left: 12%;
+    margin-top: -45%;
     
   
 }
-
+.logo {
+    width: 70%;
+     margin-right: -135px;
+      margin-top: 76%;
+       margin-bottom:-30px;
+}
 
 
 /* Carousel Styling  */
 .col {
     margin-top: 50px;
-    /* padding-right: 60px; */
 }
 .carousel {
     height: 370px;
      margin-left: -100px;
-     /* background-color: #0D1625; */
+    
 }
 .carousel-para {
     width: 500px;
@@ -110,27 +111,28 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
     }
     .h2 {
-        margin-top: 1px;
+        margin-top: 5px;
          color: #0D1625;
-          font-size: 19px
+          font-size: 15px;
+          margin-left: 2px;
     }
     .span {
         color: #61C2D0; 
-         font-size: 12px
+         font-size: 10px;
+         margin-left: 2px;
     }
     .border-img {
-        margin-bottom: 50px;
-         margin-top: -7px;
+        margin-bottom: -40px;
           width: 50px; 
-           height: 4px
+           height: 4px;
+           margin-left: 2px;
     }
     .rectangle-img {
-        width: 150%;
-        margin-top: 20%;
-        margin-left: -50px;
+        width: 200%;
+        margin-top: 40%;
+        margin-left: -93px;
     }
     .ant-carousel .slick-dots li {
         background-color: #61C2D0;
@@ -147,19 +149,20 @@
         
     }
     .ant-carousel .slick-dots {
-       margin-left: 65%
+       margin-left: 45%
     }
     .testimonial-heading {
         margin-left: -25px;
+        margin-top: -20px;
     }
     .carousel {
-        height: 315px;
-         margin-left: -80px;
-         margin-top: -65px;
-         width: 350px;
+        height: 300px;
+         margin-left: -85px;
+         margin-top: 5px;
+         width: 320px;
     }
     .carousel-para {
-        width: 300px;
+        width: 250px;
         text-align: justify;
          font-size: 12px;
           margin-left: 20px
@@ -173,7 +176,12 @@
     .carousel-h3 {
         margin-left: -45%;
     }
-    
+    .logo {
+        width: 200%;
+     margin-left: -10px;
+      margin-top: -20%;
+       margin-bottom:-30px;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 1199px) {
@@ -195,19 +203,19 @@
     }
     .border-img {
         margin-bottom: 50px;
-         margin-top: -17px;
+         margin-top: 50px;
           width: 80px; 
            height: 4px
     }
     .rectangle-img {
-        width: 100%;
+        width: 200%;
         margin-top: 20%;
-        margin-left: -50px;
+        margin-left: -200px;
     }
     .carousel {
         height: 415px;
-         margin-left: -100px;
-         margin-top: -35px;
+         margin-left: -150px;
+         margin-top: -45px;
          width: 570px;
     }
     .carousel-para {
@@ -241,7 +249,14 @@
          color: #0D1625;
     }
     .testimonial-heading {
-        margin-left: -67px;
+        margin-left: 7px;
+        margin-top: -10px;
+    }
+    .logo {
+        width: 200%;
+      margin-top: -20%;
+       margin-bottom:-30px;
+    
     }
     
 } 
@@ -256,10 +271,15 @@
     }
     .carousel {
         height: 415px;
-         margin-top: -35px;
+         margin-top: -15px;
          width: 600px;
     }
+    .logo {
+        width: 65%;
+      margin-top: 110%;
     
+    }
+   
 }
 
 @media (min-width: 540px) and (max-width: 720px) {
@@ -274,26 +294,26 @@
     .h2 {
         margin-top: 1px;
          color: #0D1625;
-          font-size: 31px
+          font-size: 23px;
     }
     .span {
         color: #61C2D0; 
-         font-size: 16px
+         font-size: 14px
     }
     .border-img {
-        margin-bottom: 50px;
-         margin-top: -17px;
+        margin-bottom: 10px;
+         margin-top: 47px;
           width: 80px; 
            height: 4px
     }
     .rectangle-img {
-        width: 120%;
-        margin-top: 30%;
-        margin-left: -70px;
+        width: 180%;
+        margin-top: 10%;
+        margin-left: -130px;
     }
     .carousel {
         height: 415px;
-         margin-left: -100px;
+         margin-left: -130px;
          margin-top: -35px;
          width: 500px;
     }
@@ -310,11 +330,7 @@
          width: 30px;
     }
     .carousel-h3 {
-        margin-left: -61%;
-    }
-    .carousel-span {
-        margin-left: -53%;
-         color: #0D1625;
+        margin-left: 20%;
     }
     .ant-carousel .slick-dots {
         margin-left: 60%
@@ -328,7 +344,14 @@
          color: #0D1625;
     }
     .testimonial-heading {
-        margin-left: -17px;
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    .logo {
+        width: 180%;
+         margin-right: -220px;
+          margin-top: 5%;
+           margin-bottom:-30px;
     }
 } 
 

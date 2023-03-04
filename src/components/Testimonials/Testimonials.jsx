@@ -8,11 +8,11 @@ import { testinomials } from '../../ProjectData/ProjectData'
 import Logo from '../../assests/images/N Logo.png'
 const {Content} = Layout
 
+
 function Testimonials() {
   return (
     <Layout className='main'>
-        <Content >
-            
+        <Content >      
       <Row className='row' > 
       <Col span={8}>
             <img src={Rectangle} className = 'rectangle-img' alt ='rectangle'></img>
@@ -24,8 +24,8 @@ function Testimonials() {
                 </span>                
                 <img className='border-img' src={Border} alt='border'></img>
                 </div>
-                
-                <Carousel autoplay  className='carousel'  >
+ 
+                <Carousel autoplay autoplaySpeed={4000} className='carousel'  >
                 {testinomials.map((testinomial,index)=> (
                   <div >
             <img key={index} className='carousel-img' src={Apostrophe} alt="Aposhtrophe"></img>
@@ -37,7 +37,7 @@ function Testimonials() {
   </Carousel>
                 </Col> 
                 <Col span={8}>
-            <img src={Logo} style ={{width: '70%', marginRight: '-135px', marginTop: '76%', marginBottom:'-30px'}} alt ='logo'></img>
+            <img src={Logo} className ='logo' alt ='logo'></img>
         </Col>
       </Row>
       </Content>
