@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+
+
+
+@font-face {
+    font-family: ProductSansRegular;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+
+
+
 
 /* Layout */
 .main {
@@ -47,6 +67,18 @@
      font-size: 25px;
      margin-top: -50px;
 }
+
+.service-heading span{
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: ProductSans, sans-serif !important;
+
+}
+
+
+.service-heading h2{
+
+}
+
 
 /* Cards Components*/
 .card {
@@ -112,6 +144,19 @@
      margin-top: 5px;
 }
 
+.service-heading span{
+
+    font-size: 25px !important;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.service-heading h2{
+
+    font-size: 40px !important;
+    font-family: ProductSans, sans-serif !important;
+
+}
 }
 
 /* hi-res laptops and desktops */
@@ -196,6 +241,16 @@
         right: 8px;
         z-index: -2px;
         top: -9px
+    }
+
+    .service-heading span{
+
+        font-size: 30px !important;
+    }
+    
+    .service-heading h2{
+    
+        font-size: 55px !important;
     }
 
 }

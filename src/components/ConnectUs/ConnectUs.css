@@ -1,7 +1,24 @@
-@import url('https://fonts.cdnfonts.com/css/product-sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+
+
+
+@font-face {
+    font-family: ProductSansRegular;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+
 
 .body {
-    font-family: Product Sans, sans-serif;
+    font-family: ProductSans, sans-serif !important;
     background-color: #0D1625;
      padding: 35px;
      height:350px;

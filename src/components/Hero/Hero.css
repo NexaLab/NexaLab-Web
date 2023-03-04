@@ -12,9 +12,7 @@
 }
 
 
-* {
-    font-family: ProductSans, sans-serif;
-}
+
 
 
 .hero-main{
@@ -44,6 +42,7 @@
     border-radius: 0% 500px 500px 0%;
     left: 0;
     background-color: #0D1625;
+    font-family: ProductSans, sans-serif;
     opacity: 80%;
     padding-left: 100px;
 }
@@ -77,6 +76,12 @@
 
 
 @media (max-width: 499px){
+
+    .hero-main{
+
+        height: 400px !important;
+    }
+
     #hero-img{
         height: 400px;
         width: 100%;
