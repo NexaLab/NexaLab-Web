@@ -1,7 +1,13 @@
-import { Button, Typography } from 'antd';
+import { Button, Typography , notification } from 'antd';
 import Layout from 'antd/es/layout/layout';
+import axios from 'axios';
 import React, { useState } from 'react';
 import "./ContactForm.css";
+import "./ContactFormMobile.css";
+import "./ContactFormTablet.css";
+import { validateEmail } from '../../utils/validateEmail';
+import validator from 'validator';
+
 
 
 
@@ -11,18 +17,39 @@ const { Title } = Typography;
 
 function ContactForm() {
 
+    const error = "error";
+    const success = "success"; 
 
 
-    const [ email, setEmail ] = useState("");
+
+    const [ api, contextHolder] = notification.useNotification();
 
 
-    const [ name, setName ] = useState("");
 
 
-    const [ phone, setPhone ] = useState("");
+    const openNotificationWithIcon = (type,message, description) => {
+
+        api[type] ({
+            message: message,
+            description:
+            description
+        });
+
+    };
 
 
-    const [  message, setMessage ] = useState("");
+
+
+    const [email, setEmail] = useState("");
+
+
+    const [name, setName] = useState("");
+
+
+    const [phone, setPhone] = useState("");
+
+
+    const [message, setMessage] = useState("");
 
 
 
@@ -72,65 +99,178 @@ function ContactForm() {
     }
 
 
-  return (
-    <Layout id='contact-form-layout'>
-
-        <div id='contact-form-container'>
 
 
 
-        <Title level={3} id = "contact-form-heading" >CONTACT US</Title>
 
 
-        <input placeholder='youremail@domain.com'  className='input' name='email'  value = { email }
+    const sendMessage = () => {
+
+
+
+
+        if (validateEmail(email)) {
+
+            if (name.length > 0) {
+
+
+                if(validator.isMobilePhone(phone)) {
+
+
+
+                    if (message.length > 0) {
+
+
+                        axios.post
+                        (
+                            `http://localhost:3001/mail`,
+                            {
+                                clientEmail: email,
+                                name: name,
+                                phoneNo: phone,
+                                message: message
+                            }
+                        )
+
+
+                        setTimeout ( () => {
+
+                            const message = "Email success";
+                            const description = "Email has been sended successfully";
+                
+                            openNotificationWithIcon(error,message,description);
+
+                        },500)
+    
+                    }
+
+
+                    else 
+                    {
+                        const message = "Incorrect Message";
+                        const description = "Enter a correct message";
+            
+                        openNotificationWithIcon(error,message,description);
+                    }
+
+                }
+
+
+                else 
+                {
+                    const message = "Incorrect Phone No";
+                    const description = "Enter a correct phone number";
         
+                    openNotificationWithIcon(error,message,description);
+                }
 
-        onChange = { onChangeEmail }
-        />
+              
 
+            }
 
+            else 
+            {
+                const message = "Incorrect Name";
+                const description = "Enter a correct name";
+    
+                openNotificationWithIcon(error,message,description);
 
-        <div id='phone-and-name-container-contact-form'>
+            }
 
-        <input placeholder='Your Name'  className='input-phone-name' name='name'   value = { name }
-        
-        
-        onChange = { onChangeName }
-        />
+          
 
-
-        <input placeholder='Phone'  className='input-phone-name' name='Phone'   value = { phone }
-        
-        
-        onChange = { onChangePhone }
-        />
-
-
-        </div>
+        }
 
 
+        else 
+        {
+            const message = "Incorrect Email";
+            const description = "Enter a correct email";
 
-
-        <textarea placeholder='Here Goes Your Message' className='text-area-message-contact-form'
-        
-        value = { message }
-
-
-        onChange = { onChangeMessage }
-        />
+            openNotificationWithIcon(error,message,description);
+        }
 
 
 
-        <Button id='send-msg-btn' size='large'>SEND MESSAGE</Button>
+        // axios.post
+        // (
+        //     `http://localhost:3001/mail`,
+        //     {
+        //         clientEmail: email,
+        //         name: name,
+        //         phoneNo: phone,
+        //         message: message
+        //     }
+        // )
+
+    }
 
 
 
-        </div>
 
 
 
-    </Layout>
-  )
+
+
+    return (
+        <Layout id='contact-form-layout'>
+
+            <div id='contact-form-container'>
+
+
+
+                <Title level={3} id="contact-form-heading" >CONTACT US</Title>
+
+
+                <input placeholder='youremail@domain.com' type="email" className='input' name='email' value={email}
+
+
+                    onChange={onChangeEmail}
+                />
+
+
+
+                <div id='phone-and-name-container-contact-form'>
+
+                    <input placeholder='Your Name' type="text" className='input-phone-name' name='name' value={name}
+
+
+                        onChange={onChangeName}
+                    />
+
+
+                    <input placeholder='Phone' type="text" className='input-phone-name' name='Phone' value={phone}
+
+
+                        onChange={onChangePhone}
+                    />
+
+
+                </div>
+
+
+
+
+                <textarea placeholder='Here Goes Your Message' className='text-area-message-contact-form'
+
+                    value={message}
+
+
+                    onChange={onChangeMessage}
+                />
+
+
+
+                <Button id='send-msg-btn' size='large' onClick={sendMessage}>SEND MESSAGE</Button>
+
+
+
+            </div>
+
+
+        {contextHolder}
+        </Layout>
+    )
 }
 
 export default ContactForm;
