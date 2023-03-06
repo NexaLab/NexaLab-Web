@@ -1,7 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import ContactForm from './components/ContactForm/ContactForm';
-import Test from './components/Test/Test';
 import Hero from '././components/Hero/Hero';
 import Home from './pages/Home';
 
