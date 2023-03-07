@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06008032.css",
+    "main.js": "/static/js/main.b7771797.js",
+    "static/js/787.8e19075f.chunk.js": "/static/js/787.8e19075f.chunk.js",
+    "static/media/HomePageImage.jpg": "/static/media/HomePageImage.b0eebb565ba35fd0fbcf.jpg",
+    "static/media/Afshal.png": "/static/media/Afshal.243ff6dad7f5cb123861.png",
+    "static/media/Anas.png": "/static/media/Anas.54bdef7492c5b24a1935.png",
+    "static/media/Rafay.png": "/static/media/Rafay.0321b660cb5ade39a519.png",
+    "static/media/ProductSansBold.ttf": "/static/media/ProductSansBold.53df38d5491afbeb42a5.ttf",
+    "static/media/Aneeque.png": "/static/media/Aneeque.475156908ad6ed1b7164.png",
+    "static/media/ProductSansRegular.ttf": "/static/media/ProductSansRegular.d165384076551a756b3c.ttf",
+    "static/media/NexaLabNLogo.jpeg": "/static/media/NexaLabNLogo.4b621aa9ab09d8c32c2e.jpeg",
+    "static/media/NexaLabLogo.svg": "/static/media/NexaLabLogo.ff782aaf1da5d055b4a9352e6ab6b0d3.svg",
+    "index.html": "/index.html",
+    "main.06008032.css.map": "/static/css/main.06008032.css.map",
+    "main.b7771797.js.map": "/static/js/main.b7771797.js.map",
+    "787.8e19075f.chunk.js.map": "/static/js/787.8e19075f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06008032.css",
+    "static/js/main.b7771797.js"
+  ]
+}
