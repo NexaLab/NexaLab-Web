@@ -29,7 +29,7 @@ function ThirdSection() {
             <Row>
               {data.map((col,index) => (
                 <Col className='col' span={deviceWidth > 1199 ? 6 : 24}>
-                  <img key={index} src={col.image} alt ='1' style={{width: '25%'}}></img>
+                  <img key={index} src={col.image} alt ='1' style={{width: '25%'}} id="third-sec-about-us-img"></img>
                   <h3>{col.heading}</h3>
                   <p className='para'>{col.paragraph}</p>
                 </Col>
