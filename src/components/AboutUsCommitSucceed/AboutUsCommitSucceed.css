@@ -26,21 +26,37 @@
 
 #about-us-commit-succeed-layout {
     width: 100% !important;
-    height: 500px !important;
+    height: fit-content !important;
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
     justify-content: space-evenly !important;
     background-color: #FFFFFF !important;
-    border: 1px solid red !important;   
 }
 
 
 
 
 
+
+
+#about-us-commit-succeed-main-container {
+
+    width: 100% !important;
+    height: fit-content !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    background-color: #FFFFFF !important;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+
+
+
 #commit-succeed-left-para-container {
-    border: 1px solid green;
     width: 30% !important;
     height: 100% !important;
     display: flex !important;
@@ -57,7 +73,6 @@
 
 
 #commit-succeed-middle-para-container {
-    border: 1px solid yellow;
     width: 30% !important;
     height: 100% !important;
 }
@@ -71,7 +86,6 @@
 
 
 #commit-succeed-right-para-container {
-    border: 1px solid black;
     width: 30% !important;
     height: 100% !important;
 }

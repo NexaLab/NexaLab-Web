@@ -20,7 +20,7 @@ function AboutUsCommitSucceed() {
 
     return (
         <Layout id='about-us-commit-succeed-layout'>
-
+            <div id='about-us-commit-succeed-main-container'>
             <div id='commit-succeed-left-para-container'>
 
                 <Title level={4} id="commit-succeed-heading">COMMIT, DECIDE, SUCCEED</Title>
@@ -85,7 +85,7 @@ function AboutUsCommitSucceed() {
                 </div>
 
             </div>
-
+            </div>
         </Layout>
     )
 }
