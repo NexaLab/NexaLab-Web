@@ -1,0 +1,17 @@
+
+.main {
+    background-color :#61C2D0;
+    color: #ffff;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para {
+    width: 270px;
+     font-size: 16px;
+     word-spacing: 2px;
+}
