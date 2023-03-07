@@ -37,7 +37,17 @@
 }
 
 
+#contact-location-layout-main-container {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #FFFFFF !important;
+    margin-bottom: 30px !important;
 
+}
 
 
 

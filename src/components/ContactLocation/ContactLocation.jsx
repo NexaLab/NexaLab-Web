@@ -25,7 +25,7 @@ const { Text } = Typography;
 function ContactLocation() {
     return (
         <Layout id='contact-location-layout'>
-
+            <div id='contact-location-layout-main-container'>
             <Title level={2} id='contact-location-heading'>NEXALAB</Title>
             <Title level={2} id="contact-location-slogan">WHERE WE BRING DIGITAL DREAMS TO LIFE</Title>
             <Text id='contact-location-text'>Get in touch with us to get the ball rolling</Text>
@@ -102,7 +102,7 @@ function ContactLocation() {
 
             </div>
 
-
+            </div>
         </Layout>
     )
 }

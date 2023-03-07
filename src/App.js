@@ -5,6 +5,7 @@ import Hero from '././components/Hero/Hero';
 import ContactLocation from './components/ContactLocation/ContactLocation';
 import Home from './pages/Home';
 import ContactHero from './components/ContactHero/ContactHero';
+import Contact from './pages/Contact';
 
 
 
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/home" component={Home}/>
+        <Route exact path="/contact" component={Contact}/>
       </Switch>
     </div>
   );
