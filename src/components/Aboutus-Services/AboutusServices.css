@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+
+
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+
+
+
+@font-face {
+    font-family: ProductSansRegular;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+
+
+
+
+#about-us-services {
+
+    background-color: #FFFFFF !important;
+}
 
 .services-main{
     padding: 80px;
@@ -6,7 +30,7 @@
 }
 
 .services-main p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -20,6 +44,17 @@
 
 #ending-para{
     margin-top: 30px;
+}
+
+
+p {
+    font-family: ProductSansRegular, sans-serif !important;
+}
+
+
+h2 {
+
+    font-family: ProductSans , sans-serif !important;
 }
 
 @media (max-width: 999px) {

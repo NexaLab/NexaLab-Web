@@ -24,7 +24,7 @@ function ThirdSection() {
   },[]);
 
   return (
-      <Layout className='main'>
+      <Layout className='about-us-third-section-layout'>
             <Content >
             <Row>
               {data.map((col,index) => (
