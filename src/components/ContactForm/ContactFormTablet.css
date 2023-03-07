@@ -47,7 +47,7 @@
 #contact-form-heading {
 
     color: #61C2D0 !important;
-    font-family: ProductSans;
+    font-family: ProductSans, sans-serif !important;
     font-size: 50px !important;
 
 }
@@ -83,7 +83,7 @@
     border-radius: 10px !important;
     border: 1.5px solid rgba(13, 22, 37, 0.8);
     margin-top: 18px !important;
-    font-family: ProductSansRegular;
+    font-family: ProductSansRegular, sans-serif !important;
     margin-bottom: 15px !important;
     box-sizing: border-box !important;
 
@@ -117,7 +117,7 @@
 
     color: #0D1625 !important;
     opacity: 0.5 !important;
-    font-family: ProductSans !important;
+    font-family: ProductSans, sans-serif !important;
     font-size: 20.5px !important;
 }
 
@@ -137,7 +137,7 @@
     border-radius: 10px !important;
     border: 1.5px solid rgba(13, 22, 37, 0.8);
     margin-top: 18px !important;
-    font-family: ProductSansRegular;
+    font-family: ProductSansRegular, sans-serif !important;
     margin-bottom: 15px !important;
 }
 
@@ -152,7 +152,7 @@
 
     color: #0D1625 !important;
     opacity: 0.5 !important;
-    font-family: ProductSans !important;
+    font-family: ProductSans,sans-serif !important;
     font-size: 20.5px !important;
 }
 
@@ -174,7 +174,7 @@
     border: 1.5px solid rgba(13, 22, 37, 0.95);
     outline: none !important;
     margin-top: 18px !important;
-    font-family: ProductSansRegular;
+    font-family: ProductSansRegular,sans-serif !important;
     margin-bottom: 37.5px !important;
     padding-top: 15px !important;
 
@@ -192,7 +192,7 @@
 
     color: #0D1625 !important;
     opacity: 0.5 !important;
-    font-family: ProductSans !important;
+    font-family: ProductSans,sans-serif !important;
     font-size: 20.5px !important;
 }
 
