@@ -1,3 +1,5 @@
+
+
 //                Import Tech we used 
 
 
@@ -129,7 +131,10 @@ export const testinomials = [
 
     }
     
+
 ]
+
+
 
 
 
@@ -177,6 +182,7 @@ export const ourTeamMembers =
         desciption: "He has expertise in React and Next.js and is proficient in developing modern and interactive applications. He is skilled in using React to develop and manage application state. " 
     }
 ];
+
 
 
 
