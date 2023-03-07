@@ -1,0 +1,29 @@
+
+
+.services-main{
+    padding: 80px;
+    text-align: left;
+}
+
+.services-main p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.services-main h2{
+    font-size: 20px;
+}
+
+#starting-para{
+    margin-bottom: 30px;
+}
+
+#ending-para{
+    margin-top: 30px;
+}
+
+@media (max-width: 999px) {
+    .services-main{
+        padding: 20px;
+    }
+}
