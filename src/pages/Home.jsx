@@ -7,6 +7,7 @@ import ConnectUs from "../components/ConnectUs/ConnectUs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import FooterNexalab from '../components/Footer/FooterNexalab';
 import Hero from "../components/Hero/Hero"
+import OurServiceSecondSection from '../components/OurServiceSecondSection/OurServiceSecondSection';
 
 
 
@@ -22,6 +23,7 @@ function Home() {
         <OurService/>
         <OurTeam/>
         <ConnectUs/>
+        <OurServiceSecondSection />
         <Testimonials/>
         <FooterNexalab/>
 
