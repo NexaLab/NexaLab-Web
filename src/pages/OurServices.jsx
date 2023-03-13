@@ -14,7 +14,7 @@ function OurServices() {
     <>
     
 
-        <Navbar/>
+  
         <OurServicesHero/>
         <TechWeUsed/>
         <Testimonials/>

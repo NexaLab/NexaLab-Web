@@ -70,7 +70,7 @@ function ContactHero() {
 
 
                         onClick={() => onSelectElement("Home")}
-
+                    to=""
                     >
                         Home
                     </Link>
@@ -87,7 +87,7 @@ function ContactHero() {
 
 
                         onClick={() => onSelectElement("Contact")}
-
+                    to=""
                     >
                         Contact
                     </Link>

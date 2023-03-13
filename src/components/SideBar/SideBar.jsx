@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import "./SideBar.css"
 import NexaLabLogo from "../../assets/NexaLabNLogo.jpeg"
 import BackButtonOfSideBar from "../../assets/BackButtonSideBar.png"
-import SideBarIcon from "../../assets/SideBarIcon.png"
+import SideBarIcon from "../../assets/SideBarIcon.png";
+import { useHistory } from 'react-router-dom';
+
 
 
 
@@ -11,13 +13,48 @@ function SideBar() {
 
     const [sideBarOpen, setSideBarOpen] = useState(false);
 
+    const [ currentNavLink, setCurrentNavLink ] = useState('Home')
+
+
+    const history = useHistory();
+
+
+
+
+
+
+
+
+
+    const onSelectNavLink = (event) => {
+        setCurrentNavLink(event.key);
+        if(event.key != "Blogs"){
+          history.push(event.key);
+          setSideBarOpen(false);
+        }
+  
+    }
+
+
+
+
+
+
 
     const showSideBarDrawer = () => {
         setSideBarOpen(true);
     };
+
+
+
+
+
+
     const closeSideBar = () => {
         setSideBarOpen(false);
     };
+
+
 
 
 
@@ -61,15 +98,15 @@ function SideBar() {
                         [
                             {
                                 label: "Home",
-                                key: "Home",
+                                key: "/",
                             },
                             {
                                 label: "About Us",
-                                key: "About Us"
+                                key: "/aboutus"
                             },
                             {
                                 label: "Our Services",
-                                key: "Our Services",
+                                key: "/services",
                                 children:
                                     [
 
@@ -77,7 +114,7 @@ function SideBar() {
 
                                         {
                                             label: "Custom Software Development",
-                                            key: "Custom Software Developement",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -86,7 +123,7 @@ function SideBar() {
 
                                         {
                                             label: "Web Development",
-                                            key: "Web Developement",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -95,7 +132,7 @@ function SideBar() {
 
                                         {
                                             label: "Mobile Development",
-                                            key: "Mobile Developement",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -104,7 +141,7 @@ function SideBar() {
 
                                         {
                                             label: "Web Design",
-                                            key: "Web Design",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -113,7 +150,7 @@ function SideBar() {
 
                                         {
                                             label: "Social Media Marketing",
-                                            key: "Social Media Marketing",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -122,7 +159,7 @@ function SideBar() {
 
                                         {
                                             label: "SEO",
-                                            key: "SEO",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -131,7 +168,7 @@ function SideBar() {
 
                                         {
                                             label: "Content",
-                                            key: "Content",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -139,7 +176,7 @@ function SideBar() {
 
                                         {
                                             label: "Software Quality Assurance (QA)",
-                                            key: "Software Quality Assurance",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -147,7 +184,7 @@ function SideBar() {
 
                                         {
                                             label: "Graphics Designer",
-                                            key: "Graphics Designer",
+                                            key: "/services",
                                             className: "services-links"
                                         },
 
@@ -163,10 +200,12 @@ function SideBar() {
                             },
                             {
                                 label: "Contact",
-                                key: "Contact"
+                                key: "/contact"
                             },
                         ]
                     }
+                    onClick = {onSelectNavLink}
+                    selectedKeys = { [ currentNavLink ] }
                 ></Menu>
 
             </Drawer>
