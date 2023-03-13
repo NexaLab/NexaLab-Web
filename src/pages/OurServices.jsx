@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useEffect } from 'react'
 import FooterNexalab from '../components/Footer/FooterNexalab';
 import Navbar from '../components/Navbar/Navbar';
 import OurServicesHero from "../components/OurServicesHero/OurServicesHero";
@@ -7,6 +7,25 @@ import Testimonials from '../components/Testimonials/Testimonials';
 
 
 function OurServices() {
+
+
+
+
+
+
+
+  useEffect( () => {
+
+
+    document.title = "NexaLab | Our Services"
+
+
+  })
+
+
+
+
+
 
 
   return (

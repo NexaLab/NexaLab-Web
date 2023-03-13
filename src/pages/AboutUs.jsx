@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,  { useEffect }  from 'react'
 import AboutusServices from '../components/Aboutus-Services/AboutusServices';
 import AboutUsCommitSucceed from '../components/AboutUsCommitSucceed/AboutUsCommitSucceed';
 import AboutUsHero from '../components/AboutUsHero/AboutUsHero';
@@ -10,6 +10,25 @@ import AboutUsThirdSection from "../components/ThirdSection/ThirdSection";
 
 function AboutUs() {
   
+
+
+
+
+
+
+  useEffect( () => {
+
+
+    document.title = "NexaLab | About"
+
+
+  });
+
+
+
+
+
+
     return (
 
         <>

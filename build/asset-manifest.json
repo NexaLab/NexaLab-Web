@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.91f4b57c.css",
-    "main.js": "/static/js/main.52c92d77.js",
+    "main.css": "/static/css/main.d60eb948.css",
+    "main.js": "/static/js/main.eb3a1997.js",
     "static/js/787.8e19075f.chunk.js": "/static/js/787.8e19075f.chunk.js",
     "static/media/HomePageImage.jpg": "/static/media/HomePageImage.b0eebb565ba35fd0fbcf.jpg",
     "static/media/N Logo.png": "/static/media/N Logo.30052959601eeb705613.png",
@@ -18,12 +18,12 @@
     "static/media/NexaLabNLogo.jpeg": "/static/media/NexaLabNLogo.4b621aa9ab09d8c32c2e.jpeg",
     "static/media/NexaLabLogo.svg": "/static/media/NexaLabLogo.ff782aaf1da5d055b4a9352e6ab6b0d3.svg",
     "index.html": "/index.html",
-    "main.91f4b57c.css.map": "/static/css/main.91f4b57c.css.map",
-    "main.52c92d77.js.map": "/static/js/main.52c92d77.js.map",
+    "main.d60eb948.css.map": "/static/css/main.d60eb948.css.map",
+    "main.eb3a1997.js.map": "/static/js/main.eb3a1997.js.map",
     "787.8e19075f.chunk.js.map": "/static/js/787.8e19075f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91f4b57c.css",
-    "static/js/main.52c92d77.js"
+    "static/css/main.d60eb948.css",
+    "static/js/main.eb3a1997.js"
   ]
 }

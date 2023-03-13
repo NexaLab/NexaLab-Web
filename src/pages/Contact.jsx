@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,  { useEffect }  from 'react'
 import Navbar from "../components/Navbar/Navbar";
 import ContactInfo from "../components/ContactLocation/ContactLocation";
 import ContactForm from "../components/ContactForm/ContactForm";
@@ -11,6 +11,24 @@ import ContactHero from '../components/ContactHero/ContactHero';
 
 function Contact() {
   
+
+
+
+
+
+  useEffect( () => {
+
+
+    document.title = "NexaLab | Contact"
+
+
+  });
+
+
+
+
+
+
   
     return (
   
