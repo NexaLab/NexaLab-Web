@@ -14,7 +14,7 @@ function AboutUs() {
 
         <>
         
-        <Navbar/>
+     
         <AboutUsHero/>
         <AboutUsCommitSucceed/>
         <AboutUsThirdSection />

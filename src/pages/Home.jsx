@@ -17,7 +17,7 @@ function Home() {
 
     <>
 
-        <Navbar/>
+     
         <Hero/>
         <OurService/>
         <OurTeam/>

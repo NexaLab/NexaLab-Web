@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react'
 import "./Navbar.css";
 import  NexaLabLogo  from "../../assets/NexaLabLogo.svg";
 import SideBar from '../SideBar/SideBar';
+import { useHistory } from 'react-router-dom';
+
+
 
 function Navbar() {
 
@@ -11,14 +14,19 @@ function Navbar() {
 
     const [ currentNavLink, setCurrentNavLink ] = useState('Home')
 
+    
+    const history = useHistory();
 
 
 
 
 
     const onSelectNavLink = (event) => {
-        console.log(event.key);
         setCurrentNavLink(event.key);
+        if(event.key != "Blogs"){
+          history.push(event.key);
+        }
+  
     }
 
 
@@ -59,11 +67,11 @@ function Navbar() {
         items= 
         {
             [
-                { label:"Home" , key: "Home"},
-                { label:"About Us" , key: "About Us" },
-                { label:"Our Services" , key: "Our Services" },
+                { label:"Home" , key: "/"},
+                { label:"About Us" , key: "/aboutus" },
+                { label:"Our Services" , key: "/services" },
                 { label:"Blogs" , key: "Blogs" },
-                { label:"Contact" , key: "Contact" },
+                { label:"Contact" , key: "/contact" },
             ]
         }
         onClick = {onSelectNavLink}

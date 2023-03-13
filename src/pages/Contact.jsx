@@ -17,7 +17,7 @@ function Contact() {
         
     <>
 
-        <Navbar/>
+     
         <ContactHero/>
         <ContactInfo/>
         <ContactForm/>

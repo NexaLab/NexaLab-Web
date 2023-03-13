@@ -122,6 +122,11 @@
         position: relative;
         text-align: center;
     }
+
+    #carousel-content {
+
+        padding-left: 30px !important;
+    }
     .row {
         display: flex;
         flex-direction: column;
