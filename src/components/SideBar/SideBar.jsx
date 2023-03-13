@@ -102,7 +102,7 @@ function SideBar() {
                             },
                             {
                                 label: "About Us",
-                                key: "/aboutus"
+                                key: "/about"
                             },
                             {
                                 label: "Our Services",

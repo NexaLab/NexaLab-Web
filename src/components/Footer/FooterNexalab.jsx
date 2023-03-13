@@ -14,15 +14,16 @@ function FooterNexalab() {
   
 
   const fbLink = () =>{
-    window.location.href = "https://www.facebook.com/";
+    window.open("https://www.facebook.com/profile.php?id=100090870199140","NexaLab | Facebook");
   }
   const linkedInLink = () =>{
-    window.location.href ="https://www.linkedin.com/";
+    window.open("https://www.linkedin.com/company/nexalab/about/", "NexaLab | LinkedIn");
   }
   const twitterLink = () =>{
-    window.location.href ="https://www.twitter.com/";
+    window.open ="https://www.twitter.com/";
   }
   return (
+    <Layout id='footer-layout'>
       <Footer className='footer'>
         <Layout className='main-footer'>
             <Layout className='main-footer-left'>
@@ -41,7 +42,7 @@ function FooterNexalab() {
                 <Link className='footer-mid-link' to='/about'>About Us</Link>      
                 <Link className='footer-mid-link' to='/services'>Services</Link>     
                 <Link className='footer-mid-link' to='/blogs'>Blogs</Link>  
-                <Link className='footer-mid-link' to='/contacts'>Contact</Link>     
+                <Link className='footer-mid-link' to='/contact'>Contact</Link>     
               </Layout>
             </Layout>
             <Layout className='main-footer-right'>
@@ -63,6 +64,7 @@ function FooterNexalab() {
             <Text style={{marginTop: "15px"}} id="rights">© 2022. All rights reserved.</Text>
           </Layout>
       </Footer>
+      </Layout>
   )
 }
 

@@ -68,7 +68,7 @@ function Navbar() {
         {
             [
                 { label:"Home" , key: "/"},
-                { label:"About Us" , key: "/aboutus" },
+                { label:"About Us" , key: "/about" },
                 { label:"Our Services" , key: "/services" },
                 { label:"Blogs" , key: "Blogs" },
                 { label:"Contact" , key: "/contact" },
