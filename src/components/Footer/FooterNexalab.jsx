@@ -20,7 +20,7 @@ function FooterNexalab() {
     window.open("https://www.linkedin.com/company/nexalab/about/", "NexaLab | LinkedIn", "noopener");
   }
   const twitterLink = () =>{
-    window.open("https://www.twitter.com/");
+    window.open("https://www.twitter.com/" ,  "NexaLab | Twitter", "noopener" );
   }
   return (
     <Layout id='footer-layout'>
