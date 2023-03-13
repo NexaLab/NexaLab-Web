@@ -11,6 +11,9 @@ import Home from './pages/Home';
 import ContactHero from './components/ContactHero/ContactHero';
 import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
+import Home from './pages/Home';
+import OurServices from './pages/OurServices';
+
 
 
 
@@ -23,6 +26,8 @@ function App() {
       <Switch>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/contact" component={Contact}/>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/services" component={OurServices}/>
       </Switch>
     </div>
   );
