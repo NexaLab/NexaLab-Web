@@ -1,7 +1,10 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import Hero from '././components/Hero/Hero';
 import Home from './pages/Home';
+import OurServices from './pages/OurServices';
+
+
+
 
 
 
@@ -11,6 +14,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/services" component={OurServices}/>
       </Switch>
     </div>
   );
