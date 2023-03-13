@@ -14,13 +14,13 @@ function FooterNexalab() {
   
 
   const fbLink = () =>{
-    window.open("https://www.facebook.com/profile.php?id=100090870199140","NexaLab | Facebook");
+    window.open("https://www.facebook.com/profile.php?id=100090870199140","NexaLab | Facebook" , "noopener");
   }
   const linkedInLink = () =>{
-    window.open("https://www.linkedin.com/company/nexalab/about/", "NexaLab | LinkedIn");
+    window.open("https://www.linkedin.com/company/nexalab/about/", "NexaLab | LinkedIn", "noopener");
   }
   const twitterLink = () =>{
-    window.open ="https://www.twitter.com/";
+    window.open("https://www.twitter.com/");
   }
   return (
     <Layout id='footer-layout'>
