@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b8b0c89.css",
-    "main.js": "/static/js/main.4bfe90b5.js",
+    "main.css": "/static/css/main.ebdbcf7b.css",
+    "main.js": "/static/js/main.cd6a945f.js",
     "static/js/787.8e19075f.chunk.js": "/static/js/787.8e19075f.chunk.js",
     "static/media/HomePageImage.jpg": "/static/media/HomePageImage.b0eebb565ba35fd0fbcf.jpg",
     "static/media/Services Page Picture.jpg": "/static/media/Services Page Picture.82b97fff06bb392fbc33.jpg",
@@ -18,12 +18,12 @@
     "static/media/NexaLabNLogo.jpeg": "/static/media/NexaLabNLogo.4b621aa9ab09d8c32c2e.jpeg",
     "static/media/NexaLabLogo.svg": "/static/media/NexaLabLogo.ff782aaf1da5d055b4a9352e6ab6b0d3.svg",
     "index.html": "/index.html",
-    "main.0b8b0c89.css.map": "/static/css/main.0b8b0c89.css.map",
-    "main.4bfe90b5.js.map": "/static/js/main.4bfe90b5.js.map",
+    "main.ebdbcf7b.css.map": "/static/css/main.ebdbcf7b.css.map",
+    "main.cd6a945f.js.map": "/static/js/main.cd6a945f.js.map",
     "787.8e19075f.chunk.js.map": "/static/js/787.8e19075f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b8b0c89.css",
-    "static/js/main.4bfe90b5.js"
+    "static/css/main.ebdbcf7b.css",
+    "static/js/main.cd6a945f.js"
   ]
 }
