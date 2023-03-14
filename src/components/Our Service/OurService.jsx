@@ -3,12 +3,12 @@ import React from 'react'
 import './OurService.css'
 import Logo from '../../assests/images/N-01 1.png'
 import Border from '../../assests/images/Rectangle 5 (1).png'
-import { ServicesList } from '../../Data/ServicesData'
+
 
 const {Content} = Layout
 const {Meta} = Card
 
-function OurService() {
+function OurService({ServicesList}) {
   return (
     <Layout className='main'>
         <Content>
@@ -26,7 +26,6 @@ function OurService() {
       <Row>
       <Col span={24} className ='card-col'>
           {ServicesList.map((services,index) => (
-            
             <Card
            className='card'
            key={index}

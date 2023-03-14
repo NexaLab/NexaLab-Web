@@ -40,7 +40,7 @@ function FooterNexalab() {
                 <Link className='footer-mid-link' to='/'>Home</Link>        
                 <Link className='footer-mid-link' to='/about'>About Us</Link>      
                 <Link className='footer-mid-link' to='/services'>Services</Link>     
-                <Link className='footer-mid-link' to='/blogs'>Blogs</Link>  
+                <Link className='footer-mid-link' >Blogs</Link>  
                 <Link className='footer-mid-link' to='/contact'>Contact</Link>     
               </Layout>
             </Layout>

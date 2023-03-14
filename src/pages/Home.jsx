@@ -6,6 +6,7 @@ import ConnectUs from "../components/ConnectUs/ConnectUs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import FooterNexalab from '../components/Footer/FooterNexalab';
 import Hero from "../components/Hero/Hero";
+import { ServicesList } from '../Data/ServicesData';
 
 
 
@@ -20,7 +21,10 @@ function Home() {
 
 
     document.title = "NexaLab | Home"
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
 
 
   });
@@ -34,7 +38,7 @@ function Home() {
 
      
         <Hero/>
-        <OurService/>
+        <OurService ServicesList={ServicesList}/>
         <OurTeam/>
         <ConnectUs/>
         <Testimonials/>
