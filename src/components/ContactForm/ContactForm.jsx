@@ -122,7 +122,7 @@ function ContactForm() {
 
                         axios.post
                         (
-                            `http://localhost:3001/mail`,
+                            `http://143.244.156.234/mail`,
                             {
                                 clientEmail: email,
                                 name: name,
