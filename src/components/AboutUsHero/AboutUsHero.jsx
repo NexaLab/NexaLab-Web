@@ -5,7 +5,7 @@ import "./AboutUsHeroMobile.css";
 import "./AboutUsHeroTablet.css";
 import AboutUsHeroImage from "../../assets/AboutUsHero/AboutUsHeroImage.png"
 import { Link } from 'react-router-dom';
-import { Button, Typography } from 'antd';
+import { Typography } from 'antd';
 
 
 
@@ -67,7 +67,7 @@ function AboutUsHero() {
                     <Link
                         className=
                         {
-                            selectedElement == "Home" ? 'hero-about-us-link-blue'
+                            selectedElement === "Home" ? 'hero-about-us-link-blue'
                                 : 'hero-about-us-link-white'
                         }
 
@@ -84,7 +84,7 @@ function AboutUsHero() {
 
                         className=
                         {
-                            selectedElement == "About Us" ? 'hero-about-us-link-blue'
+                            selectedElement === "About Us" ? 'hero-about-us-link-blue'
                                 : 'hero-about-us-link-white'
                         }
 

@@ -20,10 +20,9 @@ function FooterNexalab() {
     window.open("https://www.linkedin.com/company/nexalab/about/", "NexaLab | LinkedIn", "noopener");
   }
   const twitterLink = () =>{
-    window.open("https://www.twitter.com/" ,  "NexaLab | Twitter", "noopener" );
+    window.open("https://twitter.com/nexalab_tech?t=BO_5m_M53-i_eqaBiG1lxg&s=09" ,  "NexaLab | Twitter", "noopener" );
   }
   return (
-    <Layout id='footer-layout'>
       <Footer className='footer'>
         <Layout className='main-footer'>
             <Layout className='main-footer-left'>
@@ -41,7 +40,7 @@ function FooterNexalab() {
                 <Link className='footer-mid-link' to='/'>Home</Link>        
                 <Link className='footer-mid-link' to='/about'>About Us</Link>      
                 <Link className='footer-mid-link' to='/services'>Services</Link>     
-                <Link className='footer-mid-link' to='/blogs'>Blogs</Link>  
+                <Link className='footer-mid-link' >Blogs</Link>  
                 <Link className='footer-mid-link' to='/contact'>Contact</Link>     
               </Layout>
             </Layout>
@@ -64,7 +63,6 @@ function FooterNexalab() {
             <Text style={{marginTop: "15px"}} id="rights">© 2022. All rights reserved.</Text>
           </Layout>
       </Footer>
-      </Layout>
   )
 }
 

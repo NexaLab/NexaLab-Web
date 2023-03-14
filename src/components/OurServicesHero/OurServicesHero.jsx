@@ -6,7 +6,7 @@ import "./OurServicesHeroTablet.css";
 import OurServicesHeroImage from "../../assets/OurServicesHero/OurServicesHero.png"
 import { Link } from 'react-router-dom';
 import { Button, Typography } from 'antd';
-
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ const { Title } = Typography;
 
 
 function OurServicesHero() {
-
+const history = useHistory()
 
 
 
@@ -48,7 +48,9 @@ function OurServicesHero() {
 
 
         <Title id='our-services-hero-title'  level={1}>Our Services</Title>
-        <Button id='our-services-hero-button' size='large'>CONTACT US</Button>
+        <Button onClick={()=> {
+          history.push('/contact')
+        }} id='our-services-hero-button' size='large'>CONTACT US</Button>
 
       </div>
 
