@@ -9,15 +9,14 @@ function OurServiceSecondSection() {
   return (
 
     
-    <Layout className='main'>
+    <Layout className='our-service-page-main'>
       <Content >
-        <Row className='row'>
-          <Col span ={12} className ='col' >
-        {/* <div className='div'> */}
-          <h1 className='h1'>BEST SOFTWARE HOUSE IN PAKISTAN OFFERING TOP-NOTCH SERVICES</h1>
-          <span className='span'></span>
-          <p className='sub-heading'>We Are Not Just Serving Our Clients. We Are Serving The Nation. Best Software House In Pakistan For A Reason.</p>
-                <p className='para'>NexaLab is a business that creates, develops, and sells software products or services. We
+        <Row className='our-service-page-row'>
+          <Col span ={12} className ='our-service-page-col' >
+          <h1 className='col-heading'>BEST SOFTWARE HOUSE IN PAKISTAN OFFERING TOP-NOTCH SERVICES</h1>
+          <span className='col-span'></span>
+          <p className='col-sub-heading'>We Are Not Just Serving Our Clients. We Are Serving The Nation. Best Software House In Pakistan For A Reason.</p>
+                <p className=' col-para'>NexaLab is a business that creates, develops, and sells software products or services. We
       specialize in developing software applications, systems, and platforms for a wide variety of
       purposes, including business, entertainment, 
       education, healthcare, and more.
@@ -26,10 +25,9 @@ function OurServiceSecondSection() {
         who are passionate about creating innovative software 
         solutions to meet the evolving needs of our clients.
                 </p>
-        {/* </div> */}
         </Col>
-        <Col span ={12} className ='col' >
-        <img src={Building} alt='building' className='img' ></img>
+        <Col span ={12} className ='our-service-page-col' >
+        <img src={Building} alt='building' className='img-building' ></img>
         </Col>
         </Row>
       </Content>
