@@ -23,7 +23,7 @@
     width: 550px;
     height: 80px;
     text-align:left;
-    font-family: 'Montserrat';  
+    font-family: 'Montserrat', sans-serif !important;  
     font-style: normal;
     font-weight: 500;
     font-size: 33px;
@@ -43,7 +43,7 @@
     width: 550px;
     height: 66px;
     text-align: left;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -54,7 +54,7 @@
 .col-para {
     width: 550px;
     height: 190px;
-    font-family: 'Product Sans';
+    font-family: 'Product Sans', sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
