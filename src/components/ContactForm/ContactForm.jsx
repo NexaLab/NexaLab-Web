@@ -18,7 +18,6 @@ const { Title } = Typography;
 function ContactForm() {
 
     const error = "error";
-    const success = "success"; 
 
 
 

@@ -1,6 +1,5 @@
 import React , { useEffect } from 'react';
 import "./Home.css";
-import Navbar from "../components/Navbar/Navbar";
 import OurService from "../components/Our Service/OurService";
 import OurTeam from "../components/Our Team/OurTeam";
 import ConnectUs from "../components/ConnectUs/ConnectUs";
@@ -21,6 +20,7 @@ function Home() {
 
 
     document.title = "NexaLab | Home"
+    window.scrollTo(0, 0);
 
 
   });

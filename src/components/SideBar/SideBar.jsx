@@ -28,7 +28,7 @@ function SideBar() {
 
     const onSelectNavLink = (event) => {
         setCurrentNavLink(event.key);
-        if(event.key != "Blogs"){
+        if(event.key !== "Blogs"){
           history.push(event.key);
           setSideBarOpen(false);
         }

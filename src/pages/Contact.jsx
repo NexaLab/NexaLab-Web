@@ -1,5 +1,4 @@
 import React ,  { useEffect }  from 'react'
-import Navbar from "../components/Navbar/Navbar";
 import ContactInfo from "../components/ContactLocation/ContactLocation";
 import ContactForm from "../components/ContactForm/ContactForm";
 import FooterNexaLab from "../components/Footer/FooterNexalab";
@@ -20,6 +19,8 @@ function Contact() {
 
 
     document.title = "NexaLab | Contact"
+    window.scrollTo(0, 0);
+
 
 
   });

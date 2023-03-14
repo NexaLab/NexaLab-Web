@@ -5,7 +5,6 @@ import Border from '../../assests/images/Rectangle 5 (1).png'
 import Rectangle from '../../assests/images/Group 7.png'
 import Apostrophe from '../../assests/images/“.png'
 import { testinomials } from '../../ProjectData/ProjectData'
-import Logo from '../../assests/images/N Logo.png'
 const { Content } = Layout
 
 
