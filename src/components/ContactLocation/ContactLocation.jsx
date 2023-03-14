@@ -47,7 +47,7 @@ function ContactLocation() {
                         id='email-contact'
                     >
                         <Title level={5} style={{ color: "#61C2D0", marginTop: 0, marginBottom: 2 }}>Our LinkedIn</Title>
-                        <Text id="email">http://nexalab.tech/</Text>
+                        <Text id="email">https://www.linkedin.com/company/nexalab/about/</Text>
                     </div>
 
                 </div>

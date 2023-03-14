@@ -137,7 +137,7 @@ function ContactForm() {
                             const message = "Email success";
                             const description = "Email has been sended successfully";
                 
-                            openNotificationWithIcon(error,message,description);
+                            openNotificationWithIcon("success",message,description);
 
                         },500)
     
