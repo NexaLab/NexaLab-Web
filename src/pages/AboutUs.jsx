@@ -19,7 +19,6 @@ function AboutUs() {
   useEffect( () => {
 
 
-    document.title = "NexaLab | About"
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -38,7 +37,7 @@ function AboutUs() {
         <>
         
         <Helmet>
-        <meta name='title' content="About Nexalab | Innovative Software Solutions for Business Growth" />
+        <title>About Nexalab | Innovative Software Solutions for Business Growth</title>
           <meta name='description' content="Learn more about Nexalab - a leading provider of innovative software solutions for businesses. Our experienced team is dedicated to helping our clients achieve their goals and grow their businesses." />
 
         </Helmet>
