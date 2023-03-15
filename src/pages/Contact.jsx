@@ -17,8 +17,6 @@ function Contact() {
 
   useEffect( () => {
 
-
-    document.title = "NexaLab | Contact"
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -40,7 +38,7 @@ function Contact() {
     <>
       
         <Helmet>
-          <meta name='title' content="Contact Nexalab | Get in Touch with Our Team for Advanced Software Solutions" />
+          <title >Contact Nexalab | Get in Touch with Our Team for Advanced Software Solutions</title>
           <meta name='description' content="Contact Nexalab to learn more about our software solutions and services. Our team is dedicated to delivering innovative solutions that help businesses thrive. Get in touch with us today!" />
 
         </Helmet>
