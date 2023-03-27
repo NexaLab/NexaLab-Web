@@ -4,6 +4,8 @@ import ContactForm from "../components/ContactForm/ContactForm";
 import FooterNexaLab from "../components/Footer/FooterNexalab";
 import ContactHero from '../components/ContactHero/ContactHero';
 import { Helmet } from 'react-helmet';
+import ReactGA from "react-ga";
+
 
 
 
@@ -21,6 +23,11 @@ function Contact() {
       top: 0,
       behavior: 'smooth'
     });
+
+
+
+    ReactGA.pageview(window.location.pathname)
+
 
 
 

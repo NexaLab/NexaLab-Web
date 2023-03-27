@@ -8,6 +8,10 @@ import FooterNexalab from '../components/Footer/FooterNexalab';
 import Hero from "../components/Hero/Hero";
 import { ServicesList } from '../Data/ServicesData';
 import { Helmet } from 'react-helmet';
+import ReactGA from "react-ga";
+
+
+
 
 
 
@@ -24,6 +28,11 @@ function Home() {
       top: 0,
       behavior: 'smooth'
     });
+
+    
+    
+    ReactGA.pageview(window.location.pathname)
+
 
 
   });

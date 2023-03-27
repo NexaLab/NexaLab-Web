@@ -7,6 +7,10 @@ import OurServicesSecondSection from '../components/OurServiceSecondSection/OurS
 import OurService from '../components/Our Service/OurService';
 import { List} from '../Data/ServicesData'
 import { Helmet } from 'react-helmet';
+import ReactGA from "react-ga";
+
+
+
 
 
 function OurServices() {
@@ -19,6 +23,12 @@ function OurServices() {
       top: 0,
       behavior: 'smooth'
     });
+
+
+
+    ReactGA.pageview(window.location.pathname)
+
+
 
 
   })
