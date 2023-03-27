@@ -5,8 +5,17 @@ import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import OurServices from './pages/OurServices';
 import Navbar from './components/Navbar/Navbar';
+import ReactGA from "react-ga";
 
 
+
+
+
+
+
+const TRACKING_ID = "UA-230847879-1"
+
+ReactGA.initialize(TRACKING_ID);
 
 
 

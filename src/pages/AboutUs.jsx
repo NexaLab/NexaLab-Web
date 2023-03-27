@@ -5,6 +5,10 @@ import AboutUsCommitSucceed from '../components/AboutUsCommitSucceed/AboutUsComm
 import AboutUsHero from '../components/AboutUsHero/AboutUsHero';
 import FooterNexalab from '../components/Footer/FooterNexalab';
 import AboutUsThirdSection from "../components/ThirdSection/ThirdSection";
+import ReactGA from "react-ga";
+
+
+
 
 
 
@@ -23,6 +27,12 @@ function AboutUs() {
       top: 0,
       behavior: 'smooth'
     });
+
+
+
+    ReactGA.pageview(window.location.pathname)
+
+
 
 
   });
