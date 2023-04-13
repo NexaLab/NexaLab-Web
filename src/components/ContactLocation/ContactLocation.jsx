@@ -47,7 +47,7 @@ function ContactLocation() {
                         id='email-contact'
                     >
                         <Title level={5} style={{ color: "#61C2D0", marginTop: 0, marginBottom: 2 }}>Our LinkedIn</Title>
-                        <Text id="email">https://www.linkedin.com/company/nexalab/about/</Text>
+                        <a alt="NexaLab-LinkedIn" style={{color: 'black'}} target="_blank" href=' https://www.linkedin.com/company/nexalab/'>linkedin.com/company/nexalab/</a>
                     </div>
 
                 </div>
@@ -95,7 +95,7 @@ function ContactLocation() {
                         id='email-contact'
                     >
                         <Title level={5} style={{ color: "#61C2D0", marginTop: 0, marginBottom: 2 }}>Give us a Call</Title>
-                        <Text id="email">+92 3333333</Text>
+                        <Text id="email">+92-3353801076</Text>
                     </div>
 
                 </div>
